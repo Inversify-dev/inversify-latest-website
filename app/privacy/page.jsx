@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       clauses: [
         {
           num: '1.1',
-          text: 'Inversify Technologies operates with a strict, privacy-first posture. We collect only the information strictly required to deliver high-performance design, software engineering, e-commerce infrastructure, and AI automation.',
+          text: 'Inversify operates with a strict, privacy-first posture. We collect only the information strictly required to deliver high-performance design, software engineering, e-commerce infrastructure, and AI automation.',
         },
         {
           num: '1.2',
@@ -188,7 +188,7 @@ export default function PrivacyPage() {
     <main className="privacy-page-root">
       <Header />
       <PageTitle
-        tag="LEGAL POLICIES / INVERSIFY TECHNOLOGIES"
+        tag="LEGAL POLICIES / INVERSIFY"
         title="Privacy Policy"
         description="Our verified commitment to safeguarding your proprietary business data, customer records, and confidential materials."
         breadcrumbs={[
@@ -220,7 +220,7 @@ export default function PrivacyPage() {
             </h2>
             
             <p className="legal-hero-desc">
-              At Inversify Technologies, we design and build mission-critical digital systems for forward-thinking organizations. We understand that confidential ideas, customer databases, and strategic plans require rigorous, transparent safeguards. This policy details how your data is handled from discovery to deployment.
+              At Inversify, we design and build mission-critical digital systems for forward-thinking organizations. We understand that confidential ideas, customer databases, and strategic plans require rigorous, transparent safeguards. This policy details how your data is handled from discovery to deployment.
             </p>
 
             <div className="legal-highlights-grid">
@@ -353,7 +353,7 @@ export default function PrivacyPage() {
                 <div className="legal-channels-row">
                   <div className="legal-channel-item">
                     <span className="label">Engineering Studio</span>
-                    <strong className="value">Inversify Technologies</strong>
+                    <strong className="value">Inversify</strong>
                     <span className="sub">Colombo, Sri Lanka</span>
                   </div>
 

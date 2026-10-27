@@ -47,7 +47,7 @@ export default function ProjectsPage() {
       badge: 'Internal System',
       title: 'Fusion Gear',
       domain: 'Internal System',
-      image: '/images/projects/fusiongear-admin.webp',
+      image: '/images/projects/fusiongear.webp',
     },
     {
       id: 'colombo-athletic-football-club',

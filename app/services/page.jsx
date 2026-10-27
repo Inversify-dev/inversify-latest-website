@@ -9,87 +9,101 @@ import PageTitle from '@/components/PageTitle';
 export default function ServicesPage() {
   const [openFaq, setOpenFaq] = useState(0);
 
-
-
   const servicesData = [
     {
       num: '01',
       slug: 'web-development',
       kicker: '01 / WEB ARCHITECTURE',
-      statPill: 'Instant Speed',
+      statPill: 'Sub-Second Speed',
       discipline: 'High-Speed Web Platforms',
       badge: 'Most Requested',
       title: 'Website Design & Development',
-      summary: 'A custom-designed, fast-loading website that makes your business look world-class and helps new clients find you easily on Google.',
+      summary: 'Custom-engineered Next.js platforms built for instant loading, world-class aesthetics, and high conversion.',
       image: '/images/service-details.webp',
-      features: [
-        'Bespoke visual design crafted specifically for your brand',
-        'Instant sub-second page loading speed on all smartphones',
-        'Built-in search engine readiness so customers find you',
-        'Simple, clean dashboard to update text and photos anytime',
+      chips: [
+        'Bespoke Design System',
+        'Next.js Instant Speed',
+        'Built-in Search SEO',
+        'Frictionless Mobile UX',
       ],
     },
     {
       num: '02',
       slug: 'ecommerce-payhere',
-      kicker: '02 / DIGITAL STOREFRONTS',
+      kicker: '02 / DIGITAL COMMERCE',
       statPill: '1-Click Checkout',
       discipline: 'Digital Commerce & Payments',
       badge: 'High Conversion',
       title: 'E-Commerce & Online Stores',
-      summary: 'A smooth online shop with secure payment integrations so your customers can browse and pay with their cards in seconds.',
+      summary: 'Intuitive storefronts engineered for fast purchasing, secure card checkout, and automated buyer alerts.',
       image: '/images/service4-1.webp',
-      features: [
-        'Secure payment integrations for credit/debit cards & wallets',
-        'Instant automated SMS & WhatsApp order confirmations',
-        'Simple product catalog, inventory tracking & coupons',
-        'Frictionless 1-click mobile checkout for higher sales',
+      chips: [
+        'Card & Wallet Gateways',
+        'Instant WhatsApp Alerts',
+        'Live Inventory Sync',
+        '1-Click Mobile Checkout',
       ],
     },
     {
       num: '03',
+      slug: 'custom-software',
+      kicker: '03 / SYSTEMS & SOFTWARE',
+      statPill: '100% Bespoke',
+      discipline: 'Custom Software & Enterprise Systems',
+      badge: 'Engineered for Scale',
+      title: 'Custom Software & Systems',
+      summary: 'Bespoke business software, operational dashboards, order tracking hubs, and cloud workflow systems.',
+      image: '/images/service-systems.jpg',
+      chips: [
+        'Custom Admin Portals',
+        'Real-Time API Sync',
+        'Bank-Grade Security',
+        'Scalable Cloud Architecture',
+      ],
+    },
+    {
+      num: '04',
       slug: 'ai-automation',
-      kicker: '03 / SMART OPERATIONS',
+      kicker: '04 / SMART OPERATIONS',
       statPill: '24/7 Autopilot',
       discipline: 'Autonomous AI Workflows',
       badge: 'Hands-Free Ops',
       title: 'AI Automation',
-      summary: 'Smart AI assistants for WhatsApp and your website that answer customer questions 24/7 and take care of repetitive manual tasks.',
+      summary: 'Autonomous AI assistants for WhatsApp and web that answer inquiries 24/7 and eliminate repetitive busywork.',
       image: '/images/service7-1.webp',
-      features: [
-        '24/7 WhatsApp & web AI customer chat assistants',
-        'Instant lead qualification, inquiry response & booking',
-        'Connects directly to your spreadsheets, email & CRM',
-        'Saves 100+ hours of repetitive manual work every month',
+      chips: [
+        '24/7 WhatsApp AI',
+        'Lead Qualification',
+        'Spreadsheet & CRM Sync',
+        'Zero Manual Overhead',
       ],
     },
   ];
 
-
   const faqs = [
     {
       q: 'Why choose a custom website over standard site builders like WordPress?',
-      a: 'Custom-built websites load in a fraction of a second, have zero vulnerable plugins to maintain or get hacked, and do not slow down under traffic. Visitors get a smooth, professional experience on their phones, which Google rewards with higher search visibility and better customer inquiries.',
+      a: 'Custom-engineered websites load instantly, have zero vulnerable plugins to maintain or patch, and deliver seamless mobile experiences that drive verified inquiries.',
     },
     {
       q: 'How do online payment integrations work for e-commerce stores?',
-      a: 'We connect your store with reliable payment gateways so your customers can pay quickly using Visa, Mastercard, or mobile wallets. Payments deposit directly into your business bank account, and customers receive automatic SMS and email confirmations right away.',
+      a: 'We integrate certified payment gateways so customers pay quickly with Visa, Mastercard, and digital wallets, with instant WhatsApp and SMS order confirmation.',
     },
     {
-      q: 'How can AI automation help my day-to-day business operations?',
-      a: 'AI automation connects with your WhatsApp, website, and business tools to answer customer questions around the clock, collect contact information from new leads, and organize your daily records automatically. This saves hours of manual work every week and ensures you never miss a customer inquiry.',
+      q: 'What types of custom software and business systems can you build?',
+      a: 'We build internal operations platforms, order tracking engines, client portals, and custom ERP tools tailored exactly to your business rules and workflows.',
     },
     {
-      q: 'How long does it take to design, build, and launch?',
-      a: 'Most custom business websites and online stores launch within 2 to 4 weeks, depending on project complexity and timely client feedback. AI automation workflows are typically up and running within 1 to 2 weeks. We work with clear weekly milestones and provide live staging previews as we build.',
+      q: 'How does AI automation streamline daily operations?',
+      a: 'AI assistants handle WhatsApp inquiries around the clock, qualify incoming leads, and sync data directly to your CRM—saving over 100 hours of manual busywork each month.',
     },
     {
-      q: 'Who owns the website and underlying source code?',
-      a: 'Your business retains full operational ownership of your live website, registered domain name, branding, uploaded media, and customer database. In accordance with our standard service terms, proprietary source code and raw editable design files (AI, PSD, RAW) remain the property of Inversify unless specifically agreed in writing as a separate source-file buyout.',
+      q: 'What is the typical project timeline from start to launch?',
+      a: 'Most custom websites and e-commerce stores launch within 2 to 4 weeks. Custom software and AI automation workflows typically go live in 2 to 4 weeks with weekly milestones.',
     },
     {
-      q: 'What are your payment terms and revision limits?',
-      a: 'A 50% non-refundable advance is required to begin work, with the remaining 50% balance settled prior to final delivery and live handover. Each project includes a fixed number of revisions agreed in the initial project brief. Annual hosting, domains, and maintenance are billed separately on a yearly basis.',
+      q: 'What are your standard project payment terms?',
+      a: 'A 50% advance begins the project, with the remaining balance due upon final delivery. Each engagement includes agreed revision rounds and live staging previews.',
     },
   ];
 
@@ -98,68 +112,88 @@ export default function ServicesPage() {
       <Header />
       <PageTitle
         tag="CAPABILITIES / BUILT AROUND YOUR NEXT MOVE"
-        title="Digital, done with intent."
-        description="Focused web, commerce, and automation disciplines designed to solve real business challenges and win customers."
+        title="Digital, built to perform."
+        description="Focused web, commerce, bespoke software, and automation disciplines designed to solve real business challenges and win customers."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services' },
         ]}
       />
+
+      {/* Intro Chapter */}
       <section className="index-chapter index-chapter-services" aria-label="Services introduction">
-        <div><span className="index-chapter-kicker">02 / HOW WE HELP</span><h2>One studio.<br /><em>Three clear ways forward.</em></h2></div>
-        <p>We do three things, and we do them exceptionally well. Explore our core disciplines below or use the project calculator to estimate scope.</p>
-        <a href="#services-index" className="index-chapter-jump">Explore the 3 services <span aria-hidden="true">↓</span></a>
+        <div>
+          <span className="index-chapter-kicker">02 / HOW WE HELP</span>
+          <h2>One studio.<br /><em>Four clear ways forward.</em></h2>
+        </div>
+        <p>We focus on four core disciplines, engineered with precision and built to deliver measurable business impact.</p>
+        <a href="#services-index" className="index-chapter-jump">Explore the 4 services <span aria-hidden="true">↓</span></a>
       </section>
 
       {/* =========================================================================
-          3-SERVICE BESPOKE SHOWCASE CARDS (NEW ARCHITECTURE)
+          BESPOKE ARCHITECTURAL SHOWCASE (MODERN OUT-OF-THE-BOX GRID)
           ========================================================================= */}
-      <section id="services-index" className="services-showcase-section pt-70 pb-120">
+      <section id="services-index" className="services-showcase-section pt-90 pb-120">
         <div className="container">
-          {/* Section Kicker & Header */}
-          <div className="text-center mb-5" style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <span className="badge-status-pill mb-3 d-inline-flex">
-              <span className="beacon-dot"></span>
-              <span>Our 3 Core Specializations</span>
-            </span>
-            <h2 className="text-white mb-3" style={{ fontSize: 'clamp(2rem, 3.2vw, 2.8rem)', fontWeight: 800 }}>
-              Everything your business needs to grow online.
-            </h2>
-            <p style={{ color: '#c5c5dc', fontSize: '16px', lineHeight: 1.7 }}>
-              No unnecessary fluff, no bloated retainers—just proven digital execution designed to build instant credibility and bring you real customers.
+          {/* Header Strip with Negative Space */}
+          <div className="services-header-strip mb-5">
+            <div>
+              <span className="badge-status-pill mb-2 d-inline-flex">
+                <span className="beacon-dot"></span>
+                <span>Four Disciplines</span>
+              </span>
+              <h2 className="text-white m-0" style={{ fontSize: 'clamp(2rem, 3.4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.02em' }}>
+                Engineered for speed, scale &amp; clarity.
+              </h2>
+            </div>
+            <p className="services-lead-text m-0">
+              Purpose-built digital systems that elevate your brand and drive genuine business revenue.
             </p>
           </div>
 
-          {/* 3-Column Bespoke Showcase Grid */}
-          <div className="services-trio-grid">
+          {/* Sculpted 2x2 Architectural Grid */}
+          <div className="services-architectural-grid">
             {servicesData.map((svc) => (
-              <div key={svc.slug} className="service-trio-card">
-                <div className="service-trio-media-wrap">
-                  <img src={svc.image} alt={svc.title} loading="lazy" decoding="async" />
-                  <div className="service-trio-media-overlay" />
-                  <span className="service-trio-badge">{svc.badge}</span>
-                </div>
-                <div className="service-trio-body">
-                  <div className="service-trio-kicker-row">
-                    <span className="service-trio-kicker">{svc.kicker}</span>
-                    <span className="service-trio-stat-pill">{svc.statPill}</span>
-                  </div>
-                  <h3 className="service-trio-title">{svc.title}</h3>
-                  <p className="service-trio-desc">{svc.summary}</p>
-                  
-                  <ul className="service-trio-features-list">
-                    {svc.features.map((feat, idx) => (
-                      <li key={idx} className="service-trio-feature-item">
-                        <i className="fa-solid fa-circle-check" aria-hidden="true" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
+              <div key={svc.slug} className="service-sculpted-card">
+                {/* Architectural Watermark Numeral */}
+                <div className="service-sculpted-num" aria-hidden="true">{svc.num}</div>
 
-                  <Link href={`/services/${svc.slug}`} className="service-trio-action-btn">
-                    <span>Explore this service</span>
-                    <i className="fa-solid fa-arrow-right" aria-hidden="true" />
-                  </Link>
+                <div className="service-sculpted-inner">
+                  {/* Top Meta Bar */}
+                  <div className="service-sculpted-top">
+                    <span className="service-sculpted-kicker">{svc.kicker}</span>
+                    <span className="service-sculpted-stat">{svc.statPill}</span>
+                  </div>
+
+                  {/* Cinematic Visual Frame */}
+                  <div className="service-sculpted-media">
+                    <img src={svc.image} alt={svc.title} loading="lazy" decoding="async" />
+                    <span className="service-sculpted-badge">{svc.badge}</span>
+                  </div>
+
+                  {/* Content & Typography */}
+                  <div className="service-sculpted-body">
+                    <h3 className="service-sculpted-title">{svc.title}</h3>
+                    <p className="service-sculpted-summary">{svc.summary}</p>
+
+                    {/* Clean Horizontal Feature Chips */}
+                    <div className="service-sculpted-chips">
+                      {svc.chips.map((chip, idx) => (
+                        <span key={idx} className="service-sculpted-chip">
+                          <span className="chip-dot"></span>
+                          {chip}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Interactive Action Link */}
+                    <Link href={`/services/${svc.slug}`} className="service-sculpted-action">
+                      <span>Explore {svc.title}</span>
+                      <span className="action-arrow-bubble" aria-hidden="true">
+                        <i className="fa-solid fa-arrow-right" />
+                      </span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -167,10 +201,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-
-
       {/* =========================================================================
-          FAQ ACCORDION
+          FAQ ACCORDION (STREAMLINED & SPACIOUS)
           ========================================================================= */}
       <section className="services-faq-section py-100" style={{ background: 'rgba(9, 6, 26, 0.6)' }}>
         <div className="container">
@@ -183,8 +215,8 @@ export default function ServicesPage() {
               <h2 className="text-white mb-3" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800 }}>
                 Frequently Asked Questions
               </h2>
-              <p style={{ color: '#c5c5d8', fontSize: '15.5px', lineHeight: 1.75, marginBottom: '24px' }}>
-                Have questions about pricing, payment gateways, or timelines? We are always happy to chat and help you choose the best option for your budget.
+              <p style={{ color: '#c5c5d8', fontSize: '15.5px', lineHeight: 1.75, marginBottom: '28px' }}>
+                Clear answers on pricing, integrations, ownership, and timelines. We are always available to discuss your specific requirements.
               </p>
               <div className="d-flex flex-column gap-3">
                 <Link href="/contact" className="theme-btn-one hero-cta-pill d-inline-flex justify-content-center">
@@ -248,9 +280,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* =========================================================================
-          CONVERSION CTA BANNER
-          ========================================================================= */}
+      {/* Conversion Banner */}
       <section
         className="services-bottom-cta py-90 cta-banner-spacer"
         style={{
@@ -261,22 +291,22 @@ export default function ServicesPage() {
         <div className="container text-center">
           <div className="max-w-700 mx-auto">
             <h2 className="text-white mb-3" style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 800 }}>
-              Let's Build Your Dream Website
+              Let’s Build Something Remarkable
             </h2>
             <p style={{ color: '#c5c5d8', fontSize: '16.5px', lineHeight: 1.7, marginBottom: '24px' }}>
-              Get in touch with our team today. We will review your requirements, recommend the best solution, and provide a clear quote within 24 hours.
+              Share your project vision. We’ll review your goals and provide a tailored plan within 24 hours.
             </p>
             <div className="d-flex justify-content-center gap-3 flex-wrap">
               <Link href="/contact" className="theme-btn-one hero-cta-pill">
-                <span className="btn-label">Request Free Quote &amp; Proposal</span>
+                <span className="btn-label">Request Free Proposal</span>
                 <span className="btn-arrow-circle">
                   <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M1.5 12.5L12.5 1.5H3.5M12.5 1.5V10.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
               </Link>
               <Link href="/projects" className="theme-btn-three hero-cta-pill">
-                <span>View Our Recent Projects</span>
+                <span>View Recent Work</span>
               </Link>
             </div>
           </div>

@@ -97,6 +97,49 @@ const serviceDatabase = {
       },
     ],
   },
+  'custom-software': {
+    title: 'Custom Software & Systems',
+    kicker: 'BESPOKE BUSINESS SYSTEMS & PORTALS',
+    tagline: 'Custom business software, operational portals, and internal management tools engineered to solve your operational bottlenecks.',
+    summary: 'We engineer tailor-made software applications, client and employee portals, order management dashboards, and ERP platforms built to solve your unique operational bottlenecks. Secure, scalable, and tailored precisely to how your business works.',
+    heroImage: '/images/service-systems.jpg',
+    problemText: 'Off-the-shelf software is expensive, clunky, and forces your business to adapt to rigid templates instead of supporting your actual workflows.',
+    solutionText: 'We engineer bespoke software and internal systems that map precisely to your processes, streamline operations, and scale effortlessly with your team.',
+    deliverables: [
+      'Bespoke operational dashboards, ERP modules, and employee portals',
+      'Order fulfillment, inventory control, and real-time package tracking systems',
+      'Secure multi-role authentication (Admin, Manager, Staff, Client)',
+      'Robust relational cloud databases and custom REST/GraphQL APIs',
+      'Automated notifications via SMS, WhatsApp, and email on critical events',
+      'Zero monthly per-user licensing fees—your business owns the platform',
+      'Bank-grade SSL encryption, audit logs, and data backup protocols',
+    ],
+    milestones: [
+      { week: 'Step 1', label: 'Systems Architecture & Requirements Mapping', time: 'Days 1–5' },
+      { week: 'Step 2', label: 'UI/UX Interactive Wireframes & Database Design', time: 'Week 2' },
+      { week: 'Step 3', label: 'Full-Stack Engineering & API Integration', time: 'Week 3–4' },
+      { week: 'Step 4', label: 'Security QA, Staff Handover & Production Release', time: 'Week 5' },
+    ],
+    benefits: ['100% Bespoke Architecture', 'Zero Per-User Fees', 'Role-Based Access', 'Seamless API Sync'],
+    faqs: [
+      {
+        q: 'Why build custom software instead of using SaaS tools like Monday, Zoho, or Salesforce?',
+        a: 'SaaS tools charge recurring per-user monthly fees that explode as your team grows, and they lock you into their rigid limitations. A custom system is built 100% around your exact operational rules, requires zero ongoing seat licenses, and gives you complete competitive advantage.',
+      },
+      {
+        q: 'Can the software connect with our existing tools and payment gateways?',
+        a: 'Yes! We build secure API integrations connecting your custom software with accounting tools, payment gateways, WhatsApp, inventory warehouses, and external courier systems.',
+      },
+      {
+        q: 'Who has access to the data, and how secure is it?',
+        a: 'Your system is deployed with role-based access control (RBAC), multi-factor authentication, and encrypted databases. Different departments only see what their role permits, and all actions are recorded in security audit logs.',
+      },
+      {
+        q: 'Do you provide maintenance and updates after launch?',
+        a: 'Yes, we provide ongoing infrastructure monitoring, security updates, database backups, and feature iterations under clear support agreements.',
+      },
+    ],
+  },
   'ai-automation': {
     title: 'AI Automation',
     kicker: 'RUN YOUR OPERATIONS ON AUTOPILOT',
@@ -145,11 +188,15 @@ const serviceDatabase = {
 serviceDatabase['ui-ux-design'] = serviceDatabase['web-development'];
 serviceDatabase['branding-identity'] = serviceDatabase['web-development'];
 serviceDatabase['seo-growth'] = serviceDatabase['web-development'];
-serviceDatabase['cloud-apps'] = serviceDatabase['ai-automation'];
+serviceDatabase['software-systems'] = serviceDatabase['custom-software'];
+serviceDatabase['software'] = serviceDatabase['custom-software'];
+serviceDatabase['systems'] = serviceDatabase['custom-software'];
+serviceDatabase['cloud-apps'] = serviceDatabase['custom-software'];
 
 const serviceListNav = [
   { name: 'Website Design & Development', slug: 'web-development' },
   { name: 'E-Commerce & Online Stores', slug: 'ecommerce-payhere' },
+  { name: 'Custom Software & Systems', slug: 'custom-software' },
   { name: 'AI Automation', slug: 'ai-automation' },
 ];
 

@@ -15,11 +15,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const metadata = {
   metadataBase: new URL('https://inversify.lk'),
-  title: 'Inversify | Website Design & Development, E-Commerce & AI Automation',
-  description: "Sri Lanka's premier engineering studio specializing in high-performance Website Design & Development, E-Commerce with Payment Integrations, and autonomous AI Business Automation.",
+  title: 'Inversify | Websites, E-Commerce, Custom Software & AI Automation',
+  description: "Sri Lanka's premier engineering studio specializing in high-performance Website Design & Development, E-Commerce Stores, Bespoke Software Systems, and AI Business Automation.",
   keywords: [
     'website design and development sri lanka',
     'web design colombo',
+    'custom software development sri lanka',
+    'systems engineering colombo',
     'ecommerce website development sri lanka',
     'payment gateway integration sri lanka',
     'online store development colombo',
@@ -31,10 +33,10 @@ export const metadata = {
   ],
   authors: [{ name: 'Inversify Engineering Team' }],
   openGraph: {
-    title: 'Inversify | Website Design & Development, E-Commerce & AI Automation',
-    description: 'Bespoke custom websites, high-converting e-commerce storefronts with payment integrations, and autonomous 24/7 AI business automation workflows.',
+    title: 'Inversify | Websites, E-Commerce, Custom Software & AI Automation',
+    description: 'Bespoke custom websites, online storefronts, bespoke software systems, and autonomous 24/7 AI business automation workflows.',
     url: 'https://inversify.lk',
-    siteName: 'Inversify Technologies',
+    siteName: 'Inversify',
     images: [
       {
         url: '/images/about1-1.webp',
@@ -63,11 +65,11 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Inversify Technologies',
+    name: 'Inversify',
     url: 'https://inversify.lk',
     logo: 'https://inversify.lk/images/inversify-logo-white.webp',
     image: 'https://inversify.lk/images/about1-1.webp',
-    description: 'Premier studio for Website Design & Development, E-Commerce Stores, and AI Business Automation in Colombo, Sri Lanka.',
+    description: 'Premier studio for Website Design & Development, E-Commerce Stores, Custom Software Systems, and AI Business Automation in Colombo, Sri Lanka.',
     telephone: '+94704621228',
     email: 'invert@inversify.lk',
     address: {

@@ -16,7 +16,7 @@ export default function TermsPage() {
       clauses: [
         {
           num: '1.1',
-          text: 'These Terms & Conditions apply to all services, consulting, web development, e-commerce engineering, and AI automation delivered by Inversify Technologies.',
+          text: 'These Terms & Conditions apply to all services, consulting, web development, e-commerce engineering, and AI automation delivered by Inversify.',
         },
         {
           num: '1.2',
@@ -214,7 +214,7 @@ export default function TermsPage() {
         },
         {
           num: '9.2',
-          text: 'Inversify Technologies assumes no legal liability for trademark violations, copyright claims, or licensing disputes arising from client-supplied assets.',
+          text: 'Inversify assumes no legal liability for trademark violations, copyright claims, or licensing disputes arising from client-supplied assets.',
         },
       ],
     },
@@ -252,7 +252,7 @@ export default function TermsPage() {
     <main className="terms-page-root">
       <Header />
       <PageTitle
-        tag="LEGAL POLICIES / INVERSIFY TECHNOLOGIES"
+        tag="LEGAL POLICIES / INVERSIFY"
         title="Terms &amp; Conditions"
         description="Clear, transparent terms governing all design, engineering, e-commerce, and AI automation partnerships with Inversify."
         breadcrumbs={[
@@ -284,7 +284,7 @@ export default function TermsPage() {
             </h2>
             
             <p className="legal-hero-desc">
-              These Terms &amp; Conditions govern every service, custom build, and consulting engagement provided by Inversify Technologies. By confirming a project, approving a statement of work, or providing an initial milestone deposit, the client accepts these terms. We believe mutual clarity is the foundation of high-performance digital products.
+              These Terms &amp; Conditions govern every service, custom build, and consulting engagement provided by Inversify. By confirming a project, approving a statement of work, or providing an initial milestone deposit, the client accepts these terms. We believe mutual clarity is the foundation of high-performance digital products.
             </p>
 
             <div className="legal-highlights-grid">
@@ -417,7 +417,7 @@ export default function TermsPage() {
                 <div className="legal-channels-row">
                   <div className="legal-channel-item">
                     <span className="label">Engineering Studio</span>
-                    <strong className="value">Inversify Technologies</strong>
+                    <strong className="value">Inversify</strong>
                     <span className="sub">Colombo, Sri Lanka</span>
                   </div>
 

@@ -40,6 +40,23 @@ const services = [
   },
   {
     num: '03',
+    title: 'Custom Software & Systems',
+    slug: 'custom-software',
+    category: 'Enterprise & Internal Systems',
+    tags: ['Bespoke Software', 'Internal Tools', 'Operations Portals', 'Cloud Databases'],
+    headline: 'Tailor-made software, client portals, and internal management systems built for scale.',
+    desc: 'We engineer custom business software, operational portals, order tracking platforms, and internal tools that eliminate bottlenecks and streamline complex workflows. Built with scalable cloud databases, bank-grade authentication, and bespoke interfaces.',
+    image: '/images/service-systems.jpg',
+    stat: '100%',
+    statLabel: 'Bespoke Architecture',
+    points: [
+      'Tailor-made operational dashboards, ERPs, and workflow engines',
+      'Reliable API integrations, real-time sync & secure databases',
+      'Role-based permissions and high-security access control',
+    ],
+  },
+  {
+    num: '04',
     title: 'AI Automation',
     slug: 'ai-automation',
     category: 'Smart Business Systems',
@@ -62,7 +79,7 @@ export default function ServicesSection() {
   const service = services[active];
   return (
     <section id="services" className="studio-services studio-section">
-      <div className="studio-section-topline"><span>02 / WHAT WE DO</span><span>One studio. Three focused advantages.</span></div>
+      <div className="studio-section-topline"><span>02 / WHAT WE DO</span><span>One studio. Four focused advantages.</span></div>
       <div className="studio-section-heading">
         <div><span className="studio-kicker">CAPABILITIES</span><h2>Focused capabilities.<br /><em>Measurable business impact.</em></h2></div>
         <Link href="/services" className="studio-arrow-link">Explore all services <span aria-hidden="true">↗</span></Link>
@@ -74,7 +91,7 @@ export default function ServicesSection() {
               <span className="studio-capability-num">{item.num}</span><span className="studio-capability-title">{item.title}</span><span className="studio-capability-arrow" aria-hidden="true">↗</span>
             </button>
           ))}
-          <div className="studio-capability-foot"><span>01-03</span><span>WEBSITES · E-COMMERCE · AI AUTOMATION</span></div>
+          <div className="studio-capability-foot"><span>01-04</span><span>WEBSITES · E-COMMERCE · SOFTWARE SYSTEMS · AI AUTOMATION</span></div>
         </div>
         <div className="studio-capability-panel" id="capability-panel" role="tabpanel" aria-labelledby={`capability-tab-${active}`} key={service.num}>
           <div className="studio-capability-image"><img src={service.image} alt="" loading="lazy" /><span className="studio-capability-image-label">{service.category}</span></div>

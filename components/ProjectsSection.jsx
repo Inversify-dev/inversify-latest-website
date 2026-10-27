@@ -44,7 +44,7 @@ const projects = [
     slug: 'fusion-gear',
     category: 'Order Management System',
     year: '2026',
-    image: '/images/projects/fusiongear-admin.webp',
+    image: '/images/projects/fusiongear.webp',
     result: 'Centralised operations dashboard with real-time customer package tracking.',
     domain: 'Internal System',
   },

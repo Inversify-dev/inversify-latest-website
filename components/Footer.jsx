@@ -44,8 +44,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="studio-footer-bottom">
-        <span>© {new Date().getFullYear()} INVERSIFY TECHNOLOGIES</span>
-        <span>MADE WITH INTENT IN COLOMBO, SRI LANKA</span>
+        <span>© {new Date().getFullYear()} INVERSIFY</span>
+        <span>COLOMBO, SRI LANKA</span>
         <div><Link href="/privacy">Privacy</Link><Link href="/terms">Terms &amp; Conditions</Link></div>
       </div>
     </footer>

@@ -80,7 +80,7 @@ const projectDatabase = {
     industry: 'Sportswear Retail, Order Fulfillment & Live Parcel Tracking',
     timeline: 'Completed in 3 Weeks',
     location: 'Colombo, Sri Lanka',
-    image: '/images/projects/fusiongear-admin.webp',
+    image: '/images/projects/fusiongear.webp',
     challenge:
       'Fusion Gear manages high-volume custom jersey orders across overseas manufacturing and domestic dispatch. Previously, updating customers on supplier processing, overseas transit, customs clearance, and courier delivery required manual inquiries, causing operational overhead and communication delays.',
     solution:

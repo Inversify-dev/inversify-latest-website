@@ -13,6 +13,10 @@ const serviceAliases = {
   website: 'Website Design & Development',
   'web-development': 'Website Design & Development',
   static: 'Website Design & Development',
+  software: 'Custom Software & Systems',
+  systems: 'Custom Software & Systems',
+  'custom-software': 'Custom Software & Systems',
+  'software-systems': 'Custom Software & Systems',
   automation: 'AI Automation',
   'ai-automation': 'AI Automation',
   ai: 'AI Automation',
@@ -21,6 +25,7 @@ const serviceAliases = {
 const serviceOptions = [
   { label: 'Website Design & Development', icon: 'fa-globe' },
   { label: 'E-Commerce & Online Stores', icon: 'fa-cart-shopping' },
+  { label: 'Custom Software & Systems', icon: 'fa-network-wired' },
   { label: 'AI Automation', icon: 'fa-robot' },
   { label: 'Free Consultation / Other', icon: 'fa-comments' },
 ];

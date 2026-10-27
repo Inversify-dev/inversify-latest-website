@@ -3,11 +3,11 @@
 import { useState } from 'react';
 
 const faqs = [
-  { q: 'What services does Inversify provide?', a: 'We specialize strictly in three core pillars: Website Design & Development for fast, modern custom websites; E-Commerce & Online Stores with smooth storefronts and secure card payment integrations; and AI Automation for 24/7 customer chat assistants and automated workflows.' },
-  { q: 'How long does a typical project take?', a: 'Most custom websites and e-commerce stores launch within 2 to 4 weeks, depending on project complexity and timely client feedback, assets, and approvals. AI automation workflows are typically set up in 1 to 2 weeks, delivered with transparent weekly milestones.' },
-  { q: 'Can you integrate online payment gateways for e-commerce?', a: 'Yes. We set up secure payment integrations for credit/debit cards and digital wallets for both local and worldwide sales, depositing funds straight into your business account with automated order notifications.' },
-  { q: 'Who owns the website and source code when completed?', a: 'Your business has full operational ownership of your live website, registered domain name, branding, uploaded content, and customer database. In accordance with our standard service terms, proprietary underlying source code and editable/raw design files (AI, PSD, RAW) remain the property of Inversify unless specifically agreed in writing as a separate source-file buyout.' },
-  { q: 'What are your payment terms and revision limits?', a: 'We require a 50% non-refundable advance payment before commencing work, with the remaining 50% settled prior to final delivery and live handover. Each project includes a fixed number of revisions agreed in the initial brief. Annual services like hosting, domains, and maintenance are billed separately on a yearly basis.' },
+  { q: 'What services does Inversify provide?', a: 'We focus on four core disciplines: Website Design & Development, E-Commerce Storefronts with Payment Integrations, Custom Software & Internal Business Systems, and 24/7 AI Automation.' },
+  { q: 'How long does a typical project take?', a: 'Custom business websites and online stores typically launch in 2 to 4 weeks. Custom software systems and AI workflows take 2 to 4 weeks, with live staging previews provided at each milestone.' },
+  { q: 'Can you integrate online payment gateways for e-commerce?', a: 'Yes. We integrate secure card gateways for local and international payments directly into your business account with automated instant SMS and WhatsApp receipts.' },
+  { q: 'Who owns the website and source code when completed?', a: 'Your business has complete operational ownership of the live website, domain, branding, uploaded media, and customer database upon final project settlement.' },
+  { q: 'What are your payment terms and revision limits?', a: 'We work on a transparent 50% milestone advance before work starts, with the remaining 50% upon final sign-off before handover. Each project brief includes agreed revision rounds.' },
 ];
 
 export default function FaqSection() {

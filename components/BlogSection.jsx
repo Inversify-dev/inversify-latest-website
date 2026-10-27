@@ -3,9 +3,9 @@
 import Link from 'next/link';
 
 const posts = [
-  { title: 'Why a modern, fast website doubles business inquiries', slug: 'strong-online-presence', date: 'OCT 2026', read: '5 MIN', image: '/images/blog1-1.webp', category: 'Web Development', excerpt: 'Fast loading speeds, mobile responsiveness, and clean design convert curious visitors into ready-to-buy clients.' },
-  { title: 'How AI automation saves 100+ manual hours in business operations', slug: 'visual-identity-shapes-success', date: 'SEP 2026', read: '4 MIN', image: '/images/blog1-2.webp', category: 'AI Automation', excerpt: 'Deploying autonomous 24/7 WhatsApp customer assistants and automated workflows to eliminate repetitive data entry.' },
-  { title: 'Accepting card payments: The merchant payment integration guide', slug: 'story-driven-branding', date: 'SEP 2026', read: '6 MIN', image: '/images/blog1-3.webp', category: 'Payment Integrations', excerpt: 'A practical roadmap for setting up smooth card checkout, automated SMS receipts, and live inventory tracking.' },
+  { title: 'Why sub-second website speed doubles client inquiries', slug: 'strong-online-presence', date: 'OCT 2026', read: '5 MIN', image: '/images/blog1-1.webp', category: 'Web Architecture', excerpt: 'How clean code and instant mobile loading convert casual visitors into verified business inquiries.' },
+  { title: 'Deploying 24/7 AI assistants to eliminate manual busywork', slug: 'visual-identity-shapes-success', date: 'SEP 2026', read: '4 MIN', image: '/images/blog1-2.webp', category: 'AI Automation', excerpt: 'Automating lead qualification and customer WhatsApp replies without increasing payroll.' },
+  { title: 'The merchant guide to online card checkout in Sri Lanka', slug: 'story-driven-branding', date: 'SEP 2026', read: '6 MIN', image: '/images/blog1-3.webp', category: 'Digital Commerce', excerpt: 'Setting up frictionless card checkout, instant WhatsApp alerts, and automated stock sync.' },
 ];
 
 export default function BlogSection() {
