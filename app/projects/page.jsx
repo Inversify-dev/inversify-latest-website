@@ -10,68 +10,64 @@ export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filterTabs = [
-    { id: 'all', label: 'All' },
-    { id: 'ecommerce', label: 'E-Commerce & PayHere' },
-    { id: 'web', label: 'Websites' },
-    { id: 'saas', label: 'Digital Products' },
-    { id: 'cloud', label: 'Cloud ERP & Portals' },
-    { id: 'branding', label: 'Branding & Identity' },
+    { id: 'all', label: 'All Projects' },
+    { id: 'ecommerce', label: 'E-Commerce & Retail' },
+    { id: 'systems', label: 'Systems & Operations' },
+    { id: 'creative', label: 'Film & Creative Direction' },
+    { id: 'sports', label: 'Sports & Academy' },
+    { id: 'b2b', label: 'Enterprise B2B' },
   ];
 
   const projects = [
     {
-      id: 'lankapay-global-gateway',
-      slug: 'lankapay-global-gateway',
+      id: 'jerseycloud',
+      slug: 'jerseycloud',
       category: 'ecommerce',
-      discipline: 'FinTech & Payment Architecture',
-      badge: 'Completed Work',
-      title: 'LankaPay Global Gateway & Online Card Checkout Engine',
-      image: '/images/project1-1.webp',
+      discipline: 'E-Commerce & Retail Store',
+      badge: 'Live Platform',
+      title: 'Jersey Cloud',
+      domain: 'jerseycloud.lk',
+      image: '/images/projects/jerseycloud.webp',
     },
     {
-      id: 'ceylon-luxe-organics',
-      slug: 'ceylon-luxe-organics',
-      category: 'ecommerce',
-      discipline: 'Luxury E-Commerce / Storefront',
-      badge: 'Website Project',
-      title: 'Ceylon Luxe Organics Direct-to-Consumer Store & PayHere',
-      image: '/images/project1-2.webp',
+      id: 'qaidh',
+      slug: 'qaidh',
+      category: 'creative',
+      discipline: 'Film Direction & Portfolio',
+      badge: 'Live Showcase',
+      title: 'Qaidh Sinnalebbe',
+      domain: 'qaidh.com',
+      image: '/images/projects/qaidh.webp',
     },
     {
-      id: 'vertex-cloud-erp',
-      slug: 'vertex-cloud-erp',
-      category: 'cloud',
-      discipline: 'POS and Inventory Management',
-      badge: 'Product Concept / In Development',
-      title: 'Vertex Logistics Centralized Cloud Operations ERP',
-      image: '/images/project1-3.webp',
+      id: 'fusion-gear',
+      slug: 'fusion-gear',
+      category: 'systems',
+      discipline: 'Order Management System',
+      badge: 'Internal System',
+      title: 'Fusion Gear',
+      domain: 'Internal System',
+      image: '/images/projects/fusiongear-admin.webp',
     },
     {
-      id: 'serendib-luxury-hospitality',
-      slug: 'serendib-luxury-hospitality',
-      category: 'web',
-      discipline: 'Hospitality & Direct Booking',
-      badge: 'Completed Work',
-      title: 'Serendib Luxury Boutique Resorts & Villa Booking Engine',
-      image: '/images/project1-4.webp',
+      id: 'colombo-athletic-football-club',
+      slug: 'colombo-athletic-football-club',
+      category: 'sports',
+      discipline: 'Sports Academy Platform',
+      badge: 'Official Academy Partner',
+      title: 'Colombo Athletic FC',
+      domain: 'colomboathleticfootballclub.com',
+      image: '/images/projects/cafc.webp',
     },
     {
-      id: 'ui-ux-design-approach',
-      slug: 'ui-ux-design-approach',
-      category: 'saas',
-      discipline: 'Design System & UI/UX',
-      badge: 'Figma Prototype',
-      title: 'Apex Global Design System & Clickable Interactive UI',
-      image: '/images/project2-1.webp',
-    },
-    {
-      id: 'future-ready-solutions',
-      slug: 'future-ready-solutions',
-      category: 'saas',
-      discipline: 'Analytics & Sales Intelligence',
-      badge: 'Live Dashboard',
-      title: 'Aura Intelligence Real-Time Cashflow & Order Dashboard',
-      image: '/images/project2-3.webp',
+      id: 'mint-b2b-solutions',
+      slug: 'mint-b2b-solutions',
+      category: 'b2b',
+      discipline: 'Enterprise B2B Operations',
+      badge: 'Live Platform',
+      title: 'Mint B2B Solutions',
+      domain: 'mintb2bsolutions.com',
+      image: '/images/projects/mintb2b.webp',
     },
   ];
 
@@ -84,7 +80,7 @@ export default function ProjectsPage() {
     <main className="projects-page-root">
       <Header />
       <PageTitle
-        tag="SELECTED WORK / 2022 — 2026"
+        tag="SELECTED WORK"
         title="Work worth a closer look."
         description="A selection of digital products, commerce experiences, and brand work—made to solve real business problems."
         breadcrumbs={[
@@ -151,54 +147,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* =========================================================================
-          CONVERSION CTA BANNER
-          ========================================================================= */}
-      <section
-        className="projects-cta-section py-90 cta-banner-spacer"
-        style={{
-          background: 'linear-gradient(180deg, #09061A 0%, #100B2B 100%)',
-          borderTop: '1px solid rgba(181, 65, 250, 0.2)',
-        }}
-      >
-        <div className="container text-center">
-          <div className="max-w-700 mx-auto">
-            <h2 className="text-white mb-3" style={{ fontSize: 'clamp(2.4rem, 5vw, 4.5rem)', fontWeight: 700 }}>
-              What are you ready to make next?
-            </h2>
-            <p style={{ color: '#c5c5d8', fontSize: '16.5px', lineHeight: 1.7, marginBottom: '24px' }}>
-              Bring us a goal, a knotty problem, or a half-formed idea. We’ll help you shape a useful next step.
-            </p>
-            <div className="d-flex justify-content-center gap-3 flex-wrap">
-              <Link href="/contact" className="theme-btn-one hero-cta-pill">
-                <span className="btn-label">Start a conversation</span>
-                <span className="btn-arrow-circle">
-                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
-              </Link>
-              <a
-                href="https://wa.me/94771234567?text=Hi%20Inversify,%20I'd%20like%20to%20discuss%20a%20new%20website%20project."
-                target="_blank"
-                rel="noreferrer"
-                className="hero-cta-pill"
-                style={{
-                  background: 'rgba(37, 211, 102, 0.15)',
-                  border: '1px solid rgba(37, 211, 102, 0.45)',
-                  color: '#25D366',
-                  padding: '12px 24px',
-                  fontSize: '14.5px',
-                  fontWeight: 700,
-                }}
-              >
-                <i className="fa-brands fa-whatsapp me-2" style={{ fontSize: '18px' }}></i>
-                <span>Chat on WhatsApp</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
     </main>

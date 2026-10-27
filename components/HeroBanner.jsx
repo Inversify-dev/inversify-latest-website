@@ -5,7 +5,7 @@ export default function HeroBanner() {
   return (
     <section className="studio-hero studio-hero-fullbleed" aria-labelledby="studio-hero-title">
       <div className="studio-hero-art" aria-hidden="true">
-        <div className="hero-art-image"><img src="/images/banner-11.jpg" alt="" fetchPriority="high" /></div>
+        <div className="hero-art-image"><img src="/images/banner-11.webp" alt="" fetchPriority="high" /></div>
         <div className="hero-fullbleed-glow" />
         <span className="hero-orbit-mark hero-orbit-mark-one" />
         <span className="hero-orbit-mark hero-orbit-mark-two" />
@@ -14,7 +14,7 @@ export default function HeroBanner() {
       <div className="studio-hero-grain" aria-hidden="true" />
       <div className="studio-hero-inner">
         <div className="studio-hero-copy">
-          {/* <div className="studio-eyebrow" data-reveal="up"><span className="status-pip" /> Independent digital studio <span className="eyebrow-location">— Colombo · Working everywhere</span></div> */}
+          {/* <div className="studio-eyebrow" data-reveal="up"><span className="status-pip" /> Independent digital studio <span className="eyebrow-location">- Colombo · Working everywhere</span></div> */}
           <p className="hero-overline" data-reveal="up" aria-label="Good ideas, made real."><span className="hero-typewriter">GOOD IDEAS, MADE REAL.</span></p>
           <h1 id="studio-hero-title" className="studio-hero-title" data-reveal="up">We make<br /><span className="hero-font-accent">digital</span> mean<br className="hero-small-break" /> something.</h1>
           <div className="studio-hero-bottom" data-reveal="up">

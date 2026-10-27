@@ -5,9 +5,9 @@ import React from 'react';
 export default function GlobalError({ error, reset }) {
   return (
     <html lang="en">
-      <body style={{ background: '#09061A', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', margin: 0, fontFamily: 'sans-serif' }}>
+      <body style={{ background: '#09061A', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', margin: 0, fontFamily: 'var(--font-body, "Plus Jakarta Sans", sans-serif)' }}>
         <div style={{ textAlign: 'center', padding: '20px' }}>
-          <h2 style={{ fontSize: '24px', marginBottom: '16px' }}>Application Error</h2>
+          <h2 style={{ fontFamily: 'var(--font-display, "Raisah", sans-serif)', fontSize: '28px', fontWeight: 700, marginBottom: '16px' }}>Application Error</h2>
           <p style={{ color: '#A3A3C8', marginBottom: '24px' }}>A critical error occurred while rendering the application.</p>
           <button
             onClick={() => reset()}

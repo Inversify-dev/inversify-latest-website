@@ -1,6 +1,5 @@
 import './globals.css';
 import '@fontsource-variable/bricolage-grotesque';
-import '@fontsource-variable/unbounded';
 import '@fontsource-variable/outfit';
 import '@fontsource-variable/urbanist';
 import '@fontsource-variable/orbitron';
@@ -16,15 +15,26 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const metadata = {
   metadataBase: new URL('https://inversify.lk'),
-  title: 'Inversify - Leading Digital & Web Development Agency Sri Lanka',
-  description: "Inversify is Sri Lanka's premier web development and digital engineering agency in Colombo. We build ultra-fast, custom websites, e-commerce stores, and cloud SaaS.",
-  keywords: ['web development sri lanka', 'web design colombo', 'best web agency sri lanka', 'inversify', 'payhere integration'],
+  title: 'Inversify | Website Design & Development, E-Commerce & AI Automation',
+  description: "Sri Lanka's premier engineering studio specializing in high-performance Website Design & Development, E-Commerce with Payment Integrations, and autonomous AI Business Automation.",
+  keywords: [
+    'website design and development sri lanka',
+    'web design colombo',
+    'ecommerce website development sri lanka',
+    'payment gateway integration sri lanka',
+    'online store development colombo',
+    'ai automation agency sri lanka',
+    'ai business automation colombo',
+    'whatsapp ai customer assistant',
+    'nextjs web development colombo',
+    'inversify',
+  ],
   authors: [{ name: 'Inversify Engineering Team' }],
   openGraph: {
-    title: 'Inversify - Leading Digital & Web Development Agency Sri Lanka',
-    description: 'Award-winning digital craftsmanship from Colombo. Building high-performance web applications and conversion-engineered digital platforms.',
+    title: 'Inversify | Website Design & Development, E-Commerce & AI Automation',
+    description: 'Bespoke custom websites, high-converting e-commerce storefronts with payment integrations, and autonomous 24/7 AI business automation workflows.',
     url: 'https://inversify.lk',
-    siteName: 'Inversify Digital Agency',
+    siteName: 'Inversify Technologies',
     images: [
       {
         url: '/images/about1-1.webp',
@@ -37,9 +47,13 @@ export const metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.webp', sizes: '192x192', type: 'image/webp' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.webp',
   },
 };
 
@@ -49,19 +63,49 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Inversify',
+    name: 'Inversify Technologies',
     url: 'https://inversify.lk',
-    logo: 'https://inversify.lk/images/logo2.webp',
+    logo: 'https://inversify.lk/images/inversify-logo-white.webp',
     image: 'https://inversify.lk/images/about1-1.webp',
-    description: 'Leading web development and digital engineering agency in Colombo, Sri Lanka.',
-    telephone: '+94112345678',
-    email: 'hello@inversify.lk',
+    description: 'Premier studio for Website Design & Development, E-Commerce Stores, and AI Business Automation in Colombo, Sri Lanka.',
+    telephone: '+94704621228',
+    email: 'invert@inversify.lk',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Level 14, World Trade Center, Echelon Square',
       addressLocality: 'Colombo',
       postalCode: '00100',
       addressCountry: 'LK',
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Core Digital & AI Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Website Design & Development',
+            description: 'Ultra-fast custom websites built with modern architecture, instant page loading, and clean mobile responsiveness.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'E-Commerce & Online Stores',
+            description: 'Modern online stores with secure card payment integrations, automated SMS order alerts, and live inventory sync.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'AI Automation',
+            description: 'Autonomous 24/7 WhatsApp and web customer chat assistants, lead capture, and workflow automation.',
+          },
+        },
+      ],
     },
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -74,7 +118,6 @@ export default function RootLayout({ children }) {
     <html lang="en" data-scroll-behavior="smooth" style={{ overscrollBehavior: 'none', scrollBehavior: 'smooth' }}>
       <head>
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/style.css" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

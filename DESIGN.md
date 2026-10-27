@@ -1,4 +1,4 @@
-# Inversify — Brand Guidelines & Design System
+# Inversify - Brand Guidelines & Design System
 
 ## Brand Identity Overview
 
@@ -32,15 +32,15 @@
 
 ---
 
-## 🔤 Typography Hierarchy
+## 🔤 Typography Hierarchy (Revamped High-Impact Brand System)
 
-| Font Family | Usage Across Site |
+| Font Family | Role & Usage Across Site |
 | :--- | :--- |
-| **Clash Display** | Main Hero Headline, Section Titles (H1, H2, H3), Card Primary Titles |
-| **Manrope** | Body Copy, Descriptive Paragraphs, Service Details, FAQ Answers |
-| **Space Grotesk** | Metric Counters (`250+`), Pricing Numbers (`$399`), Date Metadata |
-| **Times New Roman (Editorial Italic)** | Editorial italic accent words (*"Work"*, *"Impact"*, *"Story"*) |
-| **Font Awesome 6 Pro** | Vector arrows, rating stars, social handles, video triggers |
+| **Raisah** | **Primary Display Headline Voice:** Main Hero Headline, Page Titles, Section Titles (H1, H2, H3), Card Primary Titles, Navigation & CTA Links |
+| **Syne (Bold 700)** | **Creative & Art-Led Display Accent:** Hero Headline Accent (*"digital"*), Chapter Kickers, Section Toplines, Big Metric Counters (`250+`), Funfact Numbers, Badges & Overlines |
+| **Plus Jakarta Sans / Satoshi** | **Refined Body Reading:** Body Copy, Descriptive Paragraphs, Service Details, FAQ Answers, Form Inputs (Zero generic system fonts) |
+| **Space Grotesk / IBM Plex Mono** | **Technical Wayfinding:** Code metadata, technical dates, system coordinates |
+| **Font Awesome 6 Pro** | Vector arrows, rating stars, social handles, interactive triggers |
 
 ---
 

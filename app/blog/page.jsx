@@ -10,36 +10,36 @@ const blogArticles = [
   {
     id: 1,
     slug: 'strong-online-presence',
-    title: 'How a Modern Website Can Double Your Business Inquiries & Sales',
-    category: 'growth',
-    discipline: 'Business Growth & Conversion',
+    title: 'How a High-Speed Static Website Can Double Your Business Inquiries & Sales',
+    category: 'static',
+    discipline: 'Static Web Architecture',
     badge: 'October 2026',
     image: '/images/blog1-1.webp',
   },
   {
     id: 2,
     slug: 'visual-identity-shapes-success',
-    title: 'How Professional Branding & Logo Design Attracts High-Paying Clients',
-    category: 'design',
-    discipline: 'Brand Equity & Identity',
+    title: 'Deploying AI Automation & WhatsApp Agents to Eliminate 100+ Hours of Manual Work',
+    category: 'automation',
+    discipline: 'AI Business Automation',
     badge: 'September 2026',
     image: '/images/blog1-2.webp',
   },
   {
     id: 3,
     slug: 'story-driven-branding',
-    title: 'How to Accept Online Card Payments in Sri Lanka: The Complete Guide',
+    title: 'How to Accept Online Card Payments in Sri Lanka: The Merchant Payment Guide',
     category: 'ecommerce',
-    discipline: 'E-Commerce & Payment IPG',
+    discipline: 'E-Commerce & Payment Integrations',
     badge: 'September 2026',
     image: '/images/blog1-3.webp',
   },
   {
     id: 4,
     slug: 'modern-react-architecture',
-    title: '5 Costly Website Mistakes That Drive Customers to Your Competitors',
-    category: 'strategy',
-    discipline: 'Conversion UX & Web Strategy',
+    title: 'Why Static Next.js Beats WordPress for Zero Vulnerabilities and Sub-Second Speed',
+    category: 'static',
+    discipline: 'Jamstack Engineering',
     badge: 'August 2026',
     image: '/images/news-1.webp',
   },
@@ -55,9 +55,9 @@ const blogArticles = [
   {
     id: 6,
     slug: 'cloud-security-compliance',
-    title: 'Custom Web Portals vs Off-the-Shelf Software: Which Is Right for You?',
-    category: 'software',
-    discipline: 'Business Automation & Cloud SaaS',
+    title: 'AI Lead Qualification: Turning WhatsApp Messages into Paying Clients 24/7',
+    category: 'automation',
+    discipline: 'Autonomous AI Workflows',
     badge: 'July 2026',
     image: '/images/news-3.webp',
   },
@@ -70,13 +70,11 @@ export default function BlogPage() {
   const [subscribed, setSubscribed] = useState(false);
 
   const topics = [
-    { id: 'all', label: 'All' },
-    { id: 'growth', label: 'Business Growth' },
-    { id: 'ecommerce', label: 'E-Commerce & PayHere' },
-    { id: 'design', label: 'Branding & Design' },
-    { id: 'strategy', label: 'Website Tips' },
+    { id: 'all', label: 'All Articles' },
+    { id: 'static', label: 'Static Websites' },
+    { id: 'ecommerce', label: 'E-Commerce & Payments' },
+    { id: 'automation', label: 'AI Automation' },
     { id: 'seo', label: 'Google SEO' },
-    { id: 'software', label: 'Business Software' },
   ];
 
   const filteredPosts = blogArticles.filter((post) => {
@@ -92,7 +90,7 @@ export default function BlogPage() {
     if (newsletterEmail) {
       const subject = 'Subscribe me to the Inversify Growth Dispatch';
       const body = `Please add ${newsletterEmail} to the Inversify Growth Dispatch.`;
-      window.location.href = `mailto:hello@inversify.lk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:invert@inversify.lk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       setSubscribed(true);
     }
   };
@@ -209,11 +207,11 @@ export default function BlogPage() {
               Practical Web &amp; Marketing Strategies
             </h2>
             <p style={{ color: '#c5c5d8', fontSize: '15.5px', maxWidth: '560px', margin: '0 auto 24px auto', lineHeight: 1.7 }}>
-              A useful monthly note on digital growth, design, and online commerce. Ask for it by email—nothing is added to a list automatically.
+              A useful monthly note on digital growth, design, and online commerce. Ask for it by email-nothing is added to a list automatically.
             </p>
 
             {subscribed ? (
-                <div className="newsletter-mailto-note" role="status" aria-live="polite">
+              <div className="newsletter-mailto-note" role="status" aria-live="polite">
                 Your email draft should open. Review it and press Send to request the monthly dispatch; nothing is subscribed automatically.
               </div>
             ) : (

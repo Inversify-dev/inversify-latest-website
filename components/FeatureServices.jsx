@@ -3,10 +3,9 @@
 import Link from 'next/link';
 
 const principles = [
-  { number: '01', title: 'People before pixels', copy: 'We start with the people on the other side of the screen. Their goals shape every decision.', image: '/images/service7-1.webp', href: '/services/ui-ux-design', label: 'Experience design' },
-  { number: '02', title: 'Thoughtful by default', copy: 'A clear process, honest collaboration and purposeful craft—no mystery, no theatre.', image: '/images/service8-1.webp', href: '/services', label: 'How we work' },
-  { number: '03', title: 'Built for real life', copy: 'Performance, accessibility and practical maintainability are part of the design, not extras.', image: '/images/service4-1.webp', href: '/services/web-development', label: 'Digital engineering' },
-  { number: '04', title: 'Distinctive, not decorative', copy: 'We look for the detail that makes a brand memorable, then give it room to breathe.', image: '/images/service3-1.webp', href: '/services/branding-identity', label: 'Brand & identity' },
+  { number: '01', title: 'Website Design & Development', copy: 'Fast, modern custom websites designed to give your brand instant credibility and attract new customers.', image: '/images/service4-1.webp', href: '/services/web-development', label: 'Websites' },
+  { number: '02', title: 'E-Commerce & Online Stores', copy: 'Clean shopping experiences with smooth payment integrations for easy card checkout and order tracking.', image: '/images/service8-1.webp', href: '/services/ecommerce-payhere', label: 'Online Stores' },
+  { number: '03', title: 'AI Automation', copy: 'Smart 24/7 customer chat assistants and automated workflows that handle routine business operations.', image: '/images/service7-1.webp', href: '/services/ai-automation', label: 'AI Workflows' },
 ];
 
 export default function FeatureServices() {

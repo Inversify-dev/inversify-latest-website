@@ -8,198 +8,149 @@ import PageTitle from '@/components/PageTitle';
 
 const serviceDatabase = {
   'web-development': {
-    title: 'Custom Web Design & Development',
-    kicker: 'MOST POPULAR SERVICE',
-    tagline: 'Modern, high-speed websites that look world-class and generate consistent business inquiries.',
-    summary: 'We build custom, modern websites designed to impress your visitors from the very first second. Every website we build is 100% mobile-friendly, loads instantly, and includes built-in Google SEO so customers can find your business easily.',
+    title: 'Website Design & Development',
+    kicker: 'FAST, MODERN WEB ARCHITECTURE',
+    tagline: 'Custom websites designed to build instant credibility, load in a flash, and turn visitors into real clients.',
+    summary: 'We build custom websites that make a memorable first impression. Every site is engineered to load instantly across all smartphones and laptops, look world-class, and help customers discover your business easily through organic search.',
     heroImage: '/images/service-details.webp',
-    problemText: 'Slow, outdated, or confusing websites turn customers away to competitors and fail to generate steady leads.',
-    solutionText: 'Inversify creates fast, gorgeous, and easy-to-navigate websites that build instant credibility and make it effortless for visitors to contact you or buy from you.',
+    problemText: 'Slow, cluttered websites with outdated plugins frustrate visitors, drive potential clients to competitors, and cause security headaches.',
+    solutionText: 'Inversify builds fast, beautifully designed websites tailored to your business goals, offering instant loading and clear pathways that make contacting you effortless.',
     deliverables: [
-      'Bespoke, premium website design tailored to your brand',
-      'Flawless responsive design for iPhones, Androids, Tablets & Desktops',
-      'Sub-second instant page loading speed on all mobile networks',
-      'Built-in Google Search Console & SEO setup for local and global discovery',
-      'User-friendly admin dashboard to easily edit text and images yourself',
-      '100% full code, domain, and asset ownership with zero hidden fees',
+      'Bespoke visual design crafted specifically for your brand and industry',
+      'Instant sub-second page loading speed with zero lag or delay',
+      '100% mobile-friendly layout optimized for iPhones, Androids, tablets, and laptops',
+      'Built-in search engine readiness so new customers can discover you naturally',
+      'Zero vulnerable plugins or fragile software to worry about',
+      'Simple, user-friendly dashboard to update text and photos anytime',
+      'Full operational ownership of your live website, custom domain, and brand assets',
     ],
     milestones: [
-      { week: 'Step 1', label: 'Discovery & Wireframes', time: 'Days 1–3' },
-      { week: 'Step 2', label: 'Interactive Design Preview', time: 'Week 1–2' },
-      { week: 'Step 3', label: 'Development & Speed Tuning', time: 'Week 2–3' },
-      { week: 'Step 4', label: 'Testing, Launch & Handover', time: 'Week 4' },
+      { week: 'Step 1', label: 'Strategy, Wireframes & UX Flow', time: 'Days 1–3' },
+      { week: 'Step 2', label: 'Bespoke UI Design & Brand Preview', time: 'Week 1–2' },
+      { week: 'Step 3', label: 'Engineering & Speed Tuning', time: 'Week 2–3' },
+      { week: 'Step 4', label: 'Review, QA & Official Launch', time: 'Week 4' },
     ],
-    benefits: ['Instant Page Load', 'Mobile & Tablet Ready', 'Google Page 1 SEO', 'Easy Self-Updates'],
+    benefits: ['Instant Loading Speed', 'Mobile Friendly', 'Search Optimized', 'Full Live Deployment'],
     faqs: [
       {
-        q: 'How long will it take to build and launch my website?',
-        a: 'Most standard business websites are completed and launched within 2 to 4 weeks. We provide a live preview link as we build so you can follow progress in real-time.',
+        q: 'Why choose a custom-built website over standard templates?',
+        a: 'Custom websites are built cleanly from the ground up without heavy templates or fragile plugins. They load in a fraction of a second, never crash under traffic spikes, and give your brand a distinct, high-end impression that builds immediate trust with customers.',
       },
       {
-        q: 'Can I easily edit text and add images after launch?',
-        a: 'Yes! We configure a simple, user-friendly control panel where you or your staff can update content, photos, and contact info in a few clicks.',
+        q: 'Can my team update text and photos easily after launch?',
+        a: 'Yes, absolutely. We connect your website to a clean, intuitive control panel where anyone on your team can edit text, publish news, or update photos in seconds with zero coding required.',
       },
       {
-        q: 'Do I get full ownership of my website and domain?',
-        a: 'Yes, 100%. You own your domain name, all design assets, and all website files with complete independence.',
+        q: 'How long does it take from kickoff to official launch?',
+        a: 'Most standard business websites are completed and launched within 2 to 4 weeks, depending on project complexity and timely client feedback. We work in transparent milestones and provide a live staging link so you can preview progress in real-time.',
+      },
+      {
+        q: 'Who owns the website, domain, and underlying source code?',
+        a: 'Your business has complete operational ownership of your live website, custom domain, brand assets, and customer data. In accordance with Inversify terms, proprietary source code and editable/raw design files (AI, PSD, RAW) remain the property of Inversify unless specifically agreed upon in writing as a separate source-file buyout.',
+      },
+      {
+        q: 'What are your payment terms and revision policies?',
+        a: 'We require a 50% non-refundable advance payment before commencing work, with the remaining 50% settled prior to final delivery and live handover. Each project includes agreed revisions defined in the project brief. Annual hosting, domains, and maintenance are billed separately on a yearly basis.',
       },
     ],
   },
   'ecommerce-payhere': {
-    title: 'E-Commerce Stores & PayHere Card Checkout',
-    kicker: 'SELL ONLINE 24/7',
-    tagline: 'Sell your products online with automatic card payments, SMS receipts, and inventory tracking.',
-    summary: 'We build beautiful, high-converting online stores that make selling your products effortless. Fully integrated with official Sri Lankan payment gateways like PayHere, Genie, and Commercial Bank IPG, plus Stripe for international credit card payments.',
+    title: 'E-Commerce & Online Stores',
+    kicker: 'SMOOTH CHECKOUT & PAYMENT INTEGRATIONS',
+    tagline: 'Intuitive online stores with reliable payment integrations, automated order notifications, and simple inventory management.',
+    summary: 'We build modern e-commerce stores designed to give your shoppers a fast, effortless buying experience. Complete with secure payment integrations for local and international cards, instant SMS and WhatsApp order alerts, and an easy control panel to manage your products.',
     heroImage: '/images/service4-1.webp',
-    problemText: 'Complicated checkout processes and lack of local card payment options cause customers to abandon their carts before paying.',
-    solutionText: 'We design 1-click checkout experiences with instant card payments, automatic customer SMS notifications, and live order tracking.',
+    problemText: 'Clunky checkout steps, missing card payment options, and slow mobile loading cause over 70% of shoppers to leave their carts without buying.',
+    solutionText: 'We design frictionless 1-click checkout experiences with secure payment integrations, automatic SMS order confirmations, and fast mobile browsing.',
     deliverables: [
-      'Complete PayHere, Genie, and Commercial Bank IPG integration',
-      'Accept Visa, Mastercard, and international cards seamlessly',
-      'Automatic instant SMS & Email order confirmation to customers',
-      'Easy product catalog, inventory manager & coupon code system',
-      'Automatic shipping calculator for local delivery and worldwide DHL',
-      'Bank-grade SSL checkout encryption and fraud protection',
+      'Reliable payment integrations for local cards, international cards, and digital wallets',
+      'Support for global sales with multi-currency card processing',
+      'Instant automated customer SMS and WhatsApp order confirmation notifications',
+      'Modern product catalog with instant search, category filters, and variations',
+      'Simple inventory management, automated stock alerts, and coupon discount engine',
+      'Automatic delivery calculation for local dispatch and international couriers',
+      'Bank-grade SSL security and encrypted checkout protecting customer data',
     ],
     milestones: [
       { week: 'Step 1', label: 'Store Planning & Payment Setup', time: 'Days 1–3' },
       { week: 'Step 2', label: 'Storefront Design & Product Uploads', time: 'Week 1–2' },
-      { week: 'Step 3', label: 'Gateway Testing & SMS Integration', time: 'Week 2–3' },
-      { week: 'Step 4', label: 'Live Store Launch & Training', time: 'Week 4' },
+      { week: 'Step 3', label: 'Payment Gateway Testing & Order Alerts', time: 'Week 2–3' },
+      { week: 'Step 4', label: 'Live Store Launch & Merchant Training', time: 'Week 4' },
     ],
-    benefits: ['PayHere & Card Payments', 'Instant SMS Order Receipts', 'Inventory Sync', '1-Click Checkout'],
+    benefits: ['Payment Integrations', 'Instant SMS Alerts', '1-Click Checkout', 'Simple Stock Sync'],
     faqs: [
       {
-        q: 'Can customers pay using credit and debit cards in Sri Lanka?',
-        a: 'Yes! Customers can pay with local and international Visa and Mastercard, Genie, and direct bank transfers via PayHere.',
+        q: 'Can customers pay using credit and debit cards online?',
+        a: 'Yes! We configure direct payment integrations allowing your customers to pay quickly and securely using Visa, Mastercard, and mobile wallets. Settlement happens directly into your business bank account.',
       },
       {
-        q: 'Will I receive an alert when a customer places an order?',
-        a: 'Yes, you and your customer receive immediate SMS and email alerts the second a successful payment is made.',
+        q: 'Can I sell to customers internationally as well as locally?',
+        a: 'Yes. We can set up international card processing alongside your local payment gateway, allowing buyers anywhere in the world to pay smoothly in their local currencies.',
+      },
+      {
+        q: 'Will I receive an immediate alert when someone buys a product?',
+        a: 'Yes, both you and your customer receive immediate SMS, WhatsApp, and email alerts the exact moment a payment is confirmed, with the order summary and delivery address.',
+      },
+      {
+        q: 'How easily can I add new products or change prices?',
+        a: 'You get a simple, secure store manager where adding new items, updating stock, creating promotional coupon codes, and viewing orders takes just a few clicks.',
       },
     ],
   },
-  'ui-ux-design': {
-    title: 'UI/UX Interface & Digital Product Design',
-    kicker: 'CLICKABLE PROTOTYPES',
-    tagline: 'Clean, user-friendly screens and interactive previews that your customers will love using.',
-    summary: 'We transform your product ideas into intuitive, clean digital interfaces. You get full clickable Figma prototypes that you can test on your phone and show to investors or team members before development begins.',
-    heroImage: '/images/service3-1.webp',
-    problemText: 'Confusing, cluttered interfaces frustrate customers and cause them to stop using your digital product.',
-    solutionText: 'We design clear, modern user flows where every button, form, and screen guides users naturally toward completing their goals.',
-    deliverables: [
-      'Clickable interactive design prototypes testable on mobile & desktop',
-      'Complete component design systems with dark and light themes',
-      'User journey maps designed for maximum ease of use',
-      'Complete Figma design files and developer handoff specs',
-    ],
-    milestones: [
-      { week: 'Step 1', label: 'User Research & Wireframing', time: 'Days 1–4' },
-      { week: 'Step 2', label: 'Visual Concepts & Color Systems', time: 'Week 1–2' },
-      { week: 'Step 3', label: 'High-Fidelity Screens & Interactions', time: 'Week 2–3' },
-      { week: 'Step 4', label: 'Interactive Prototype Handover', time: 'Week 3–4' },
-    ],
-    benefits: ['Clickable Previews', 'Tested on Phones', 'Modern Aesthetics', 'Clear User Flows'],
-    faqs: [
-      {
-        q: 'Can I test the design prototype on my smartphone?',
-        a: 'Yes! We send you an interactive link so you can tap through the app or website on your phone just like a live app.',
-      },
-    ],
-  },
-  'branding-identity': {
-    title: 'Logo, Branding & Visual Identity',
-    kicker: 'STAND OUT FROM THE CROWD',
-    tagline: 'Custom vector logo suites and brand style guides that make your business look established and premium.',
-    summary: 'We craft memorable visual identities that command respect. From custom vector logos and modern font pairings to full brand guideline books and social media asset kits, we ensure your business looks cohesive everywhere.',
-    heroImage: '/images/service5-1.webp',
-    problemText: 'Cheap, generic stock logos make modern businesses look unestablished and untrustworthy to high-paying clients.',
-    solutionText: 'We develop custom, bespoke brand identity systems that reflect your company\'s true quality and make you unforgettable.',
-    deliverables: [
-      'Custom vector logo suite (SVG, PDF, high-res transparent PNGs)',
-      'Complete Brand Style Guide Book (fonts, exact color codes, usage rules)',
-      'Social media profile avatars, covers, and promotional post templates',
-      'Business card and corporate letterhead stationery designs',
-    ],
-    milestones: [
-      { week: 'Step 1', label: 'Brand Direction & Concept Moodboards', time: 'Days 1–3' },
-      { week: 'Step 2', label: 'Vector Logo Concepts & Revisions', time: 'Week 1–2' },
-      { week: 'Step 3', label: 'Color Palette & Typography Styling', time: 'Week 2–3' },
-      { week: 'Step 4', label: 'Final Master Brand Book Delivery', time: 'Week 3–4' },
-    ],
-    benefits: ['Custom Vector Logo', 'Brand Style Guide', 'Social Media Kit', 'Print & Digital Ready'],
-    faqs: [
-      {
-        q: 'Can I use the logo files on huge billboard printings and shirts?',
-        a: 'Yes! All logo files are created in mathematically scalable vector formats (SVG/PDF) that can be enlarged to any size without losing sharpness.',
-      },
-    ],
-  },
-  'cloud-apps': {
-    title: 'Custom Web Portals & Business Software',
-    kicker: 'STREAMLINE YOUR OPERATIONS',
-    tagline: 'Automate manual tasks, manage bookings, and scale your business with custom web software.',
-    summary: 'We build custom web portals, customer management systems, and booking software tailored to your exact business workflow. Say goodbye to messy spreadsheets and automate your daily operations.',
+  'ai-automation': {
+    title: 'AI Automation',
+    kicker: 'RUN YOUR OPERATIONS ON AUTOPILOT',
+    tagline: 'Smart AI customer assistants and automated workflows that answer questions 24/7 and save hours every day.',
+    summary: 'We set up custom AI automations and smart agent workflows that take care of repetitive daily tasks. From answering customer questions on WhatsApp around the clock to capturing new leads and organizing data automatically—let your business run smoothly without increasing overhead.',
     heroImage: '/images/service7-1.webp',
-    problemText: 'Managing your operations across WhatsApp messages and spreadsheets causes errors, lost inquiries, and hours of wasted manual work.',
-    solutionText: 'We build custom online dashboards that handle bookings, customer records, and team tasks automatically in one secure place.',
+    problemText: 'Staff spend countless hours answering the same customer questions, copying information between spreadsheets, and missing new leads outside business hours.',
+    solutionText: 'We build helpful AI assistants and automated workflows that respond to customer inquiries in seconds, capture contact details, and handle repetitive tasks 24/7.',
     deliverables: [
-      'Tailor-made customer and employee login portals',
-      'Automated appointment, reservation, and booking workflows',
-      'Secure cloud database with automated daily backups',
-      '24/7 uptime monitoring and priority technical support',
+      '24/7 WhatsApp and website AI customer chat assistants trained on your business information',
+      'Instant lead qualification, inquiry response, and appointment scheduling',
+      'Automated multi-app workflows connecting WhatsApp, Google Sheets, email, and your CRM',
+      'Automates repetitive data entry, inquiry routing, and customer follow-up reminders',
+      'Saves 100+ hours of repetitive manual work every month for your team',
+      'Bank-grade privacy: company data is kept secure and never used for public training',
     ],
     milestones: [
-      { week: 'Step 1', label: 'Workflow Mapping & Requirements', time: 'Days 1–4' },
-      { week: 'Step 2', label: 'Database Setup & Security Architecture', time: 'Week 1–2' },
-      { week: 'Step 3', label: 'Feature Development & Dashboard Testing', time: 'Week 2–4' },
-      { week: 'Step 4', label: 'Staff Training & Live Deployment', time: 'Week 4–5' },
+      { week: 'Step 1', label: 'Workflow Audit & Task Mapping', time: 'Days 1–3' },
+      { week: 'Step 2', label: 'AI Assistant Architecture & Knowledge Training', time: 'Week 1–2' },
+      { week: 'Step 3', label: 'WhatsApp, CRM & Tool Integration', time: 'Week 2–3' },
+      { week: 'Step 4', label: 'Live Deployment, Testing & Staff Handover', time: 'Week 4' },
     ],
-    benefits: ['Custom Workflows', 'Automated Bookings', 'Secure Cloud Data', 'Staff Training Included'],
+    benefits: ['24/7 Customer Support', '100+ Hours Saved Monthly', 'Zero Missed Leads', 'Seamless CRM Sync'],
     faqs: [
       {
-        q: 'Can this software integrate with our existing tools?',
-        a: 'Yes, we can connect your custom portal with payment gateways, SMS providers, email marketing, and Google Calendar.',
+        q: 'How does the AI know accurate information about our business?',
+        a: 'We train your custom AI assistant specifically on your verified business guides, pricing sheets, product catalogs, and service FAQs. The AI only responds with your approved information and politely hands off to human staff when needed.',
       },
-    ],
-  },
-  'seo-growth': {
-    title: 'Google SEO & Search Rankings',
-    kicker: 'GET MORE CUSTOMERS ON GOOGLE',
-    tagline: 'Get your website to the top of Google so customers find you first when searching for your services.',
-    summary: 'We optimize your website to rank at the top of Google search results for valuable commercial keywords in Sri Lanka and worldwide. Attract ready-to-buy customers who are actively searching for your services.',
-    heroImage: '/images/service8-1.webp',
-    problemText: 'If your business is not ranking on Google page 1, your competitors are getting all the calls and customer inquiries.',
-    solutionText: 'We optimize your website speed, content keywords, and Google business setup so your website climbs to the top of search rankings.',
-    deliverables: [
-      'Comprehensive Google search ranking audit & roadmap',
-      'Targeted keyword optimization for Sri Lanka & international markets',
-      'Google Search Console and Google Analytics visitor tracking setup',
-      'Speed acceleration to ensure Google favors your website',
-    ],
-    milestones: [
-      { week: 'Step 1', label: 'Keyword Research & Competitor Audit', time: 'Days 1–3' },
-      { week: 'Step 2', label: 'On-Page SEO & Content Optimization', time: 'Week 1–2' },
-      { week: 'Step 3', label: 'Website Speed Boost for Google Ranking', time: 'Week 2–3' },
-      { week: 'Step 4', label: 'Google Search Console Verification', time: 'Week 4' },
-    ],
-    benefits: ['Google Page 1 Ranking', 'More Inbound Calls', 'Speed Boost', 'Visitor Analytics'],
-    faqs: [
       {
-        q: 'How long does it take to see Google ranking improvements?',
-        a: 'Technical SEO fixes and Google indexing typically show measurable ranking improvements in Google Search Console within 2 to 4 weeks.',
+        q: 'Can the AI assist customers directly on WhatsApp?',
+        a: 'Yes! We integrate official WhatsApp Business APIs with custom AI assistants to answer inquiries, share pricing or product details, collect lead contact info, and book appointments 24/7.',
+      },
+      {
+        q: 'What business software can you connect the automation to?',
+        a: 'We can connect your workflows to Google Sheets, Gmail, HubSpot, Zoho, Notion, Slack, and virtually any other business tool you use daily.',
+      },
+      {
+        q: 'Is our company and customer data kept secure?',
+        a: 'Yes, 100%. We use enterprise private endpoints with strict zero-retention policies. Your private company records are never used to train public AI models.',
       },
     ],
   },
 };
 
+// Aliases for legacy or alternative service URLs to ensure zero broken links
+serviceDatabase['ui-ux-design'] = serviceDatabase['web-development'];
+serviceDatabase['branding-identity'] = serviceDatabase['web-development'];
+serviceDatabase['seo-growth'] = serviceDatabase['web-development'];
+serviceDatabase['cloud-apps'] = serviceDatabase['ai-automation'];
+
 const serviceListNav = [
-  { name: 'Custom Web Design', slug: 'web-development' },
-  { name: 'Online Stores & PayHere', slug: 'ecommerce-payhere' },
-  { name: 'UI/UX Interface Design', slug: 'ui-ux-design' },
-  { name: 'Logo & Brand Identity', slug: 'branding-identity' },
-  { name: 'Custom Business Software', slug: 'cloud-apps' },
-  { name: 'Google SEO & Rankings', slug: 'seo-growth' },
+  { name: 'Website Design & Development', slug: 'web-development' },
+  { name: 'E-Commerce & Online Stores', slug: 'ecommerce-payhere' },
+  { name: 'AI Automation', slug: 'ai-automation' },
 ];
 
 export default function ServiceDetailsPage({ params }) {
@@ -268,7 +219,7 @@ export default function ServiceDetailsPage({ params }) {
                     <span className="btn-label">Get a Free Cost Estimate</span>
                   </Link>
                   <a
-                    href="https://wa.me/94771234567?text=Hi%20Inversify,%20I'd%20like%20to%20get%20a%20quote%20for%20a%20website%20project."
+                    href="https://wa.me/94704621228?text=Hi%20Inversify,%20I'd%20like%20to%20get%20a%20quote%20for%20a%20website%20project."
                     target="_blank"
                     rel="noreferrer"
                     className="whatsapp-direct-btn w-100 d-flex align-items-center justify-content-center gap-2 p-3 rounded-3"

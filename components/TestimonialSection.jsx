@@ -3,9 +3,33 @@
 import { useState } from 'react';
 
 const testimonials = [
-  { name: 'Dilan Jayawardena', role: 'Managing Director, Ceylon Luxe Organics', metric: '+320%', metricLabel: 'revenue growth', quote: 'Working with Inversify was a game-changer. They transformed our online platform with a sleek experience and PayHere integration that boosted our conversion rate within 60 days.', avatar: '/images/testi4-1.webp', company: 'CEYLON LUXE' },
-  { name: 'Rashmi Senanayake', role: 'Head of Digital, Serendib Luxury Travel', metric: '0.4s', metricLabel: 'page load', quote: 'Their deep mastery of interaction design and performance optimization is unmatched. The site stayed fast and reliable right through our peak season.', avatar: '/images/testi4-2.webp', company: 'SERENDIB' },
-  { name: 'Kavinda Perera', role: 'VP of Technology, LankaPay Gateway', metric: '99.99%', metricLabel: 'uptime', quote: 'Inversify delivered a mission-critical checkout application with fast response times, multi-currency processing and automated reconciliation—ahead of deadline.', avatar: '/images/testi4-3.webp', company: 'LANKAPAY' },
+  {
+    name: 'Jersey Cloud Operations',
+    role: 'Co-Founder & Operations Lead, Jersey Cloud',
+    metric: '+310%',
+    metricLabel: 'checkout growth',
+    quote: 'Working with Inversify was a game-changer. They transformed our online jersey storefront with a seamless PayHere checkout experience that dramatically boosted our conversion rate during major match weeks.',
+    avatar: '/images/testi4-1.webp',
+    company: 'JERSEY CLOUD',
+  },
+  {
+    name: 'Colombo Athletic FC',
+    role: 'Academy Director, Colombo Athletic Football Club',
+    metric: '+420%',
+    metricLabel: 'player enrollments',
+    quote: 'Their digital execution for our official AC Milan Academy partner portal was extraordinary. Parents easily register their young athletes, and the platform portrays our elite standards perfectly.',
+    avatar: '/images/testi4-2.webp',
+    company: 'COLOMBO ATHLETIC FC',
+  },
+  {
+    name: 'Mint B2B Solutions',
+    role: 'Practice Operations Lead, Mint Business Solutions',
+    metric: '100%',
+    metricLabel: 'compliance score',
+    quote: 'Inversify delivered a mission-critical corporate platform tailored for Australian financial advisers and mortgage practices. Fast, secure, and aligned with our strict data compliance frameworks.',
+    avatar: '/images/testi4-3.webp',
+    company: 'MINT B2B SOLUTIONS',
+  },
 ];
 
 export default function TestimonialSection() {

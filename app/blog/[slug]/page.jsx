@@ -20,7 +20,7 @@ const articlesDatabase = {
     intro:
       'Your website is the single most important digital storefront your business owns. When customers hear about your company, the first thing they do is search for your website. Here is how a fast, modern website directly converts visitors into paying customers.',
     pullQuote:
-      'A great website is not just a digital brochure—it is your hardest-working 24/7 salesperson, answering questions and collecting customer leads while you sleep.',
+      'A great website is not just a digital brochure-it is your hardest-working 24/7 salesperson, answering questions and collecting customer leads while you sleep.',
     sections: [
       {
         heading: '1. Why Website Speed Determines Your Sales',
@@ -192,7 +192,7 @@ const articlesDatabase = {
     intro:
       'Are you outgrowing spreadsheets and generic subscription software? Here is a straightforward guide to help you decide when a custom web portal can save your team hours of manual work every week.',
     pullQuote:
-      'Custom software is designed around your exact business workflow—saving time, eliminating errors, and giving you 100% control over your business data.',
+      'Custom software is designed around your exact business workflow-saving time, eliminating errors, and giving you 100% control over your business data.',
     sections: [
       {
         heading: 'When to Choose Custom Software',
@@ -366,7 +366,7 @@ export default function BlogArticlePage({ params }) {
                   <span className="btn-label">Get A Free Quote</span>
                 </Link>
                 <a
-                  href="https://wa.me/94771234567?text=Hi%20Inversify,%20I%20read%20your%20article%20and%20would%20like%20to%20get%20a%20quote."
+                  href="https://wa.me/94704621228?text=Hi%20Inversify,%20I%20read%20your%20article%20and%20would%20like%20to%20get%20a%20quote."
                   target="_blank"
                   rel="noreferrer"
                   className="whatsapp-direct-btn d-inline-flex align-items-center justify-content-center gap-2 p-3 rounded-3"

@@ -23,7 +23,7 @@
 
 ## Distinctive type and dark Work revision
 - [x] Use another locally bundled, non-generic display font throughout page titles and section headlines; keep long-form body text readable and preserve clear hierarchy.
-- [x] Convert the entire Work index—including background, filters, featured project, regular project cards, titles, borders, and hover/focus states—to the existing dark/cyan site theme.
+- [x] Convert the entire Work index-including background, filters, featured project, regular project cards, titles, borders, and hover/focus states-to the existing dark/cyan site theme.
 - [x] Rebuild and confirm key pages, responsive layout, all Work projects/filters, and the final source archive.
 
 

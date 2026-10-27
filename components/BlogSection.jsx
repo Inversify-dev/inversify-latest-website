@@ -3,9 +3,9 @@
 import Link from 'next/link';
 
 const posts = [
-  { title: 'Why a modern website can double your business inquiries', slug: 'strong-online-presence', date: 'OCT 2026', read: '5 MIN', image: '/images/blog1-1.webp', category: 'Digital strategy', excerpt: 'A fast, focused digital presence turns curious visitors into customers who know what to do next.' },
-  { title: 'How visual identity builds enterprise trust', slug: 'visual-identity-shapes-success', date: 'SEP 2026', read: '4 MIN', image: '/images/blog1-2.webp', category: 'Brand & design', excerpt: 'The most valuable brand details are the ones that make a promise feel tangible.' },
-  { title: 'Accepting online card payments in Sri Lanka', slug: 'story-driven-branding', date: 'SEP 2026', read: '6 MIN', image: '/images/blog1-3.webp', category: 'E-commerce & payments', excerpt: 'A practical guide to getting card payments and a smoother checkout working for your business.' },
+  { title: 'Why a modern, fast website doubles business inquiries', slug: 'strong-online-presence', date: 'OCT 2026', read: '5 MIN', image: '/images/blog1-1.webp', category: 'Web Development', excerpt: 'Fast loading speeds, mobile responsiveness, and clean design convert curious visitors into ready-to-buy clients.' },
+  { title: 'How AI automation saves 100+ manual hours in business operations', slug: 'visual-identity-shapes-success', date: 'SEP 2026', read: '4 MIN', image: '/images/blog1-2.webp', category: 'AI Automation', excerpt: 'Deploying autonomous 24/7 WhatsApp customer assistants and automated workflows to eliminate repetitive data entry.' },
+  { title: 'Accepting card payments: The merchant payment integration guide', slug: 'story-driven-branding', date: 'SEP 2026', read: '6 MIN', image: '/images/blog1-3.webp', category: 'Payment Integrations', excerpt: 'A practical roadmap for setting up smooth card checkout, automated SMS receipts, and live inventory tracking.' },
 ];
 
 export default function BlogSection() {

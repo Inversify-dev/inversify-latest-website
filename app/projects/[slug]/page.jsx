@@ -7,186 +7,189 @@ import Footer from '@/components/Footer';
 import PageTitle from '@/components/PageTitle';
 
 const projectDatabase = {
-  'lankapay-global-gateway': {
-    title: 'LankaPay Global Gateway & Online Checkout',
-    kicker: 'PAYMENT GATEWAY SUCCESS STORY',
-    client: 'LankaPay Financial Network',
-    industry: 'Financial Technology / Online Card Payments',
-    timeline: 'Completed in 4 Weeks',
-    location: 'Colombo, Sri Lanka',
-    image: '/images/project1-1.webp',
-    challenge:
-      'LankaPay wanted to make paying online in Sri Lanka simple, fast, and secure by unifying PayHere, Genie, and direct bank card payments into one smooth 1-click mobile checkout experience.',
-    solution:
-      'Inversify designed and built an ultra-fast, mobile-friendly payment checkout with instant SMS payment receipts, automated bank reconciliation, and bank-grade card encryption.',
-    results: [
-      { metric: '+340%', label: 'Mobile Order Growth' },
-      { metric: 'Instant', label: 'Card Payment Processing' },
-      { metric: '100%', label: 'Safe & Encrypted' },
-      { metric: '0.4s', label: 'Instant Page Speed' },
-    ],
-    techStack: ['PayHere Card Payments', 'Instant SMS Confirmations', 'Mobile Optimized', 'Bank-Grade Security'],
-    gallery: ['/images/project1-1.webp', '/images/project1-2.webp', '/images/project1-3.webp'],
-    milestones: [
-      'Designed a clean, 1-click mobile payment checkout modal',
-      'Connected PayHere, Genie, and Commercial Bank IPG card processing',
-      'Built automated daily settlement reports for business owners',
-      'Configured instant SMS and email transaction receipts',
-    ],
-    nextSlug: 'ceylon-luxe-organics',
-    nextTitle: 'Ceylon Luxe Organics Online Storefront',
-  },
-  'ceylon-luxe-organics': {
-    title: 'Ceylon Luxe Organics Online Storefront',
-    kicker: 'E-COMMERCE SUCCESS STORY',
-    client: 'Ceylon Luxe Botanicals Ltd',
-    industry: 'Organic Wellness & Global E-Commerce',
-    timeline: 'Completed in 3 Weeks',
-    location: 'Colombo / London',
-    image: '/images/project1-2.webp',
-    challenge:
-      'Ceylon Luxe needed a luxury online store that could accept card payments locally in Sri Lanka and internationally, calculate DHL shipping rates automatically, and load instantly on mobile phones.',
-    solution:
-      'We built a high-converting online shopping platform with seamless PayHere card checkout, automatic currency switching (LKR / USD), and an easy-to-use product manager for their team.',
-    results: [
-      { metric: '+220%', label: 'International Online Sales' },
-      { metric: '100/100', label: 'Google Speed Score' },
-      { metric: '1-Click', label: 'Easy Mobile Buying' },
-      { metric: 'Automated', label: 'DHL Shipping Rates' },
-    ],
-    techStack: ['Online Store', 'PayHere Card IPG', 'Global Shipping Sync', 'Mobile First'],
-    gallery: ['/images/project1-2.webp', '/images/project1-1.webp', '/images/project1-4.webp'],
-    milestones: [
-      'Bespoke luxury product catalog with high-resolution image zoom',
-      'Automatic DHL Express global shipping rate calculator',
-      'PayHere and international card payment integration',
-      'Sub-second instant mobile loading speed across all countries',
-    ],
-    nextSlug: 'vertex-cloud-erp',
-    nextTitle: 'Vertex Logistics Business Management Portal',
-  },
-  'vertex-cloud-erp': {
-    title: 'Vertex Logistics Business Management Portal',
-    kicker: 'BUSINESS AUTOMATION SUCCESS STORY',
-    client: 'Vertex Logistics Global',
-    industry: 'Logistics & Supply Chain Management',
-    timeline: 'Completed in 6 Weeks',
-    location: 'Colombo / Singapore',
-    image: '/images/project1-3.webp',
-    challenge:
-      'Managing inventory across multiple warehouses using spreadsheets was causing manual errors, lost tracking numbers, and hours of wasted administrative time.',
-    solution:
-      'Inversify built a custom web portal that lets staff manage stock, track dispatches, and generate automated PDF invoices and reports in real time from any laptop or phone.',
-    results: [
-      { metric: '20+ Hrs', label: 'Saved Per Week in Admin Time' },
-      { metric: 'Zero', label: 'Manual Paperwork Errors' },
-      { metric: '12', label: 'Warehouses Synced in Real Time' },
-      { metric: '100%', label: 'Secure Cloud Access' },
-    ],
-    techStack: ['Custom Portal', 'Live Inventory Tracking', 'Automated Invoicing', 'Cloud Database'],
-    gallery: ['/images/project1-3.webp', '/images/project2-1.webp', '/images/project2-3.webp'],
-    milestones: [
-      'Real-time inventory tracking across 12 warehouse locations',
-      'Staff permissions and secure login system',
-      'Automated invoice and packing slip PDF generator',
-      'Automated daily cloud backups and security shielding',
-    ],
-    nextSlug: 'serendib-luxury-hospitality',
-    nextTitle: 'Serendib Luxury Resorts & Villas',
-  },
-  'serendib-luxury-hospitality': {
-    title: 'Serendib Luxury Resorts & Villas',
-    kicker: 'HOSPITALITY SUCCESS STORY',
-    client: 'Serendib Hospitality Group',
-    industry: 'Boutique Luxury Resorts',
-    timeline: 'Completed in 3 Weeks',
-    location: 'Galle / Colombo, Sri Lanka',
-    image: '/images/project1-4.webp',
-    challenge:
-      'The resort was paying heavy commissions to third-party travel booking platforms, while their old website failed to show the true luxury of their villas.',
-    solution:
-      'We designed an immersive luxury website with direct reservation calendars, PayHere card deposits, photo tours, and zero commission fees paid to middleman platforms.',
-    results: [
-      { metric: '+280%', label: 'Direct Online Bookings' },
-      { metric: '0%', label: 'Third-Party Commission Fees' },
-      { metric: 'Instant', label: 'WhatsApp Reservation Confirmations' },
-      { metric: '4.95/5', label: 'Guest Booking Satisfaction' },
-    ],
-    techStack: ['Direct Reservations', 'Villa Photo Tours', 'PayHere Card Payments', 'Instant WhatsApp Alerts'],
-    gallery: ['/images/project1-4.webp', '/images/project1-2.webp', '/images/project1-1.webp'],
-    milestones: [
-      'Direct online booking calendar with real-time room availability',
-      'Automatic customer WhatsApp and email booking confirmation',
-      'High-resolution villa photography gallery with mobile speed boost',
-      'Multi-language English and German support',
-    ],
-    nextSlug: 'ui-ux-design-approach',
-    nextTitle: 'Apex Global Brand & Web System',
-  },
-  'ui-ux-design-approach': {
-    title: 'Apex Global Brand & Web System',
-    kicker: 'BRAND DESIGN SUCCESS STORY',
-    client: 'Apex Enterprise Software',
-    industry: 'Enterprise Software & Digital Products',
+  jerseycloud: {
+    title: 'Jersey Cloud -E-Commerce Storefront',
+    kicker: 'E-COMMERCE & RETAIL SUCCESS STORY',
+    client: 'Jersey Cloud (Pvt) Ltd',
+    liveUrl: 'https://jerseycloud.lk',
+    domain: 'jerseycloud.lk',
+    industry: 'Sports Apparel, Football Kits & Fanwear E-Commerce',
     timeline: 'Completed in 3 Weeks',
     location: 'Colombo, Sri Lanka',
-    image: '/images/project2-1.webp',
+    image: '/images/projects/jerseycloud.webp',
     challenge:
-      'Inconsistent visual styles and logos across 4 corporate software products confused customers and made the company look fragmented.',
+      'Jersey Cloud needed a high-performance, mobile-first e-commerce platform for football fans and athletes across Sri Lanka. Their previous setup lacked automated local card payments, dynamic size customization for player names/numbers, and instant WhatsApp order confirmations.',
     solution:
-      'Inversify designed a unified brand style guide, custom vector logos, and an interactive design system that gives all their products a modern, cohesive look.',
+      'Inversify architected an ultra-fast custom React storefront integrated with the official PayHere payment gateway for seamless Visa and MasterCard checkouts, instant order status SMS and WhatsApp alerts, island-wide delivery tracking, and a high-converting mobile product catalog.',
     results: [
-      { metric: '100%', label: 'Brand Consistency' },
-      { metric: '4', label: 'Products Unified' },
-      { metric: 'Tested', label: 'On All Screen Sizes' },
-      { metric: 'Figma', label: 'Clickable Prototypes Handed Over' },
+      { metric: '+310%', label: 'Mobile Checkout Conversion' },
+      { metric: 'Instant', label: 'PayHere Card & IPG Processing' },
+      { metric: '0.38s', label: 'Sub-Second Page Speed' },
+      { metric: '100%', label: 'Island-Wide Automated Delivery Dispatch' },
     ],
-    techStack: ['Custom Vector Logo', 'Brand Style Guide', 'Figma Clickable UI', 'Modern Aesthetics'],
-    gallery: ['/images/project2-1.webp', '/images/project1-3.webp', '/images/project2-3.webp'],
+    techStack: ['Next.js / React', 'PayHere Card IPG', 'Mobile-First UX', 'Automated SMS & WhatsApp Alerts'],
+    responsiveMockup: '/images/projects/jerseycloud-responsive.webp',
+    gallery: ['/images/projects/jerseycloud-catalog.webp', '/images/projects/jerseycloud-product.webp'],
     milestones: [
-      'Unified vector logo suite and color palette creation',
-      'Complete corporate brand guideline book',
-      'Interactive Figma design system testable on smartphones',
-      'Clear developer-ready asset export kits',
+      'Custom e-commerce store with high-resolution jersey previews & team filtering',
+      'Direct PayHere payment gateway with Visa, MasterCard, and Genie integration',
+      'Automated order dispatch and island-wide delivery notification system',
+      'Real-time stock management and mobile-optimized customer checkout',
     ],
-    nextSlug: 'future-ready-solutions',
-    nextTitle: 'Aura Analytics Real-Time Sales Dashboard',
+    nextSlug: 'qaidh',
+    nextTitle: 'Qaidh Sinnalebbe -Filmmaker Portfolio',
   },
-  'future-ready-solutions': {
-    title: 'Aura Analytics Real-Time Sales Dashboard',
-    kicker: 'ANALYTICS SUCCESS STORY',
-    client: 'Aura Intelligence Labs',
-    industry: 'Customer Analytics & Software',
-    timeline: 'Completed in 4 Weeks',
-    location: 'Colombo / San Francisco',
-    image: '/images/project2-3.webp',
+  qaidh: {
+    title: 'Qaidh Sinnalebbe -Filmmaker Portfolio',
+    kicker: 'CREATIVE DIRECTION SUCCESS STORY',
+    client: 'Qaidh Sinnalebbe (Qreate Studios)',
+    liveUrl: 'https://qaidh.com',
+    domain: 'qaidh.com',
+    industry: 'Film Direction, Visual Storytelling & Creative Strategy',
+    timeline: 'Completed in 3 Weeks',
+    location: 'Colombo, Sri Lanka',
+    image: '/images/projects/qaidh.webp',
     challenge:
-      'Business owners needed a clean, simple dashboard to see their online sales, customer conversion funnels, and revenue trends in real time.',
+      'Award-winning filmmaker and director Qaidh Sinnalebbe needed a bold, distinctive portfolio website to showcase his independent films (such as "Somewhere Between"), festival awards, and commercial creative strategy without looking like a generic template.',
     solution:
-      'We built an easy-to-read analytics dashboard with live charts, sales alerts, and clear business metrics that anyone on the team can understand at a glance.',
+      'Inversify crafted a dark, atmospheric editorial platform featuring custom typography (Royal Signature & Century Gothic), high-contrast cinematic imagery, embedded festival showcases, and smooth narrative pacing tailored to international producers and festival curators.',
     results: [
-      { metric: 'Real-Time', label: 'Live Sales Tracking' },
-      { metric: 'Instant', label: 'Revenue Trend Alerts' },
-      { metric: 'Clean', label: 'Easy-to-Read Charts' },
-      { metric: '100%', label: 'Mobile Accessible' },
+      { metric: '100%', label: 'Bespoke Visual Identity' },
+      { metric: 'Global', label: 'Festival Curation & Press Visibility' },
+      { metric: 'Instant', label: 'High-Res Video & Film Poster Previews' },
+      { metric: '5/5', label: 'Creative Direction Score' },
     ],
-    techStack: ['Sales Dashboard', 'Instant Alerts', 'Live Charts', 'Secure Cloud Data'],
-    gallery: ['/images/project2-3.webp', '/images/project1-3.webp', '/images/project2-1.webp'],
+    techStack: ['Editorial Web Architecture', 'Custom Typography Engine', 'Cinematic Media Gallery', 'Responsive Narrative Layout'],
+    responsiveMockup: '/images/projects/qaidh-responsive.webp',
+    gallery: ['/images/projects/qaidh-films.webp', '/images/projects/qaidh-feature.webp'],
     milestones: [
-      'Real-time sales chart canvas showing live revenue streams',
-      'Automatic WhatsApp and email threshold alerts for sales milestones',
-      'Clean dark-mode dashboard interface designed for easy readability',
-      'Secure login with role-based access for business executives',
+      'Deep cinematic dark-mode aesthetic with custom typography pairing',
+      'Dedicated independent film showcase for festival releases & short films',
+      'Interactive biography, press features, and direct production inquiry channels',
+      'Ultra-fast mobile loading for international film festival juries',
     ],
-    nextSlug: 'lankapay-global-gateway',
-    nextTitle: 'LankaPay Global Gateway & Online Checkout',
+    nextSlug: 'fusion-gear',
+    nextTitle: 'Fusion Gear -Order Management & Live Tracking',
+  },
+  'fusion-gear': {
+    title: 'Fusion Gear -Order Management & Live Tracking',
+    kicker: 'ORDER MANAGEMENT & TRACKING SYSTEM SUCCESS STORY',
+    client: 'Fusion Gear (Pvt) Ltd',
+    liveUrl: null,
+    domain: 'Internal System',
+    industry: 'Sportswear Retail, Order Fulfillment & Live Parcel Tracking',
+    timeline: 'Completed in 3 Weeks',
+    location: 'Colombo, Sri Lanka',
+    image: '/images/projects/fusiongear-admin.webp',
+    challenge:
+      'Fusion Gear manages high-volume custom jersey orders across overseas manufacturing and domestic dispatch. Previously, updating customers on supplier processing, overseas transit, customs clearance, and courier delivery required manual inquiries, causing operational overhead and communication delays.',
+    solution:
+      'Inversify engineered a centralised order management solution connecting an administrative operations dashboard with a customer-facing live order tracking portal. Orders are managed seamlessly through the admin dashboard, while customers monitor real-time shipping milestones without contacting support.',
+    results: [
+      { metric: '-85%', label: 'Manual Status Inquiries' },
+      { metric: '100%', label: 'Milestone Progress Visibility' },
+      { metric: '3,000+', label: 'Orders Processed & Monitored' },
+      { metric: '0.25s', label: 'Sub-Second Portal Lookup Speed' },
+    ],
+    techStack: ['Tailored System Architecture', 'Real-Time Order Tracking Engine', 'Admin Control Dashboard', 'Automated Waybill Management'],
+    responsiveMockup: '/images/projects/fusiongear-responsive.webp',
+    gallery: ['/images/projects/fusiongear.webp', '/images/projects/fusiongear-detail.webp'],
+    milestones: [
+      'Centralised administrative dashboard for managing orders, batches, and waybills in one place',
+      'Customer-facing 9-stage tracking timeline (from order receipt to customs and final dispatch)',
+      'Real-time status synchronization reflected immediately on the public tracking portal',
+      'Streamlined operational workflow eliminating manual customer status messaging',
+    ],
+    nextSlug: 'colombo-athletic-football-club',
+    nextTitle: 'Colombo Athletic FC -AC Milan Academy',
+  },
+  'colombo-athletic-football-club': {
+    title: 'Colombo Athletic FC -AC Milan Academy',
+    kicker: 'OFFICIAL AC MILAN PARTNER SUCCESS STORY',
+    client: 'Colombo Athletic FC / AC Milan Academy Sri Lanka',
+    liveUrl: 'https://colomboathleticfootballclub.com',
+    domain: 'colomboathleticfootballclub.com',
+    industry: 'Youth Football Academy & Elite Sports Coaching',
+    timeline: 'Completed in 4 Weeks',
+    location: 'Colombo, Sri Lanka',
+    image: '/images/projects/cafc.webp',
+    challenge:
+      'As the official AC Milan Academy Partner in Sri Lanka, CAFC needed a world-class digital platform to manage youth player registrations (ages 6–17), showcase Milan methodology training programs, and streamline seasonal academy enrollments.',
+    solution:
+      'Inversify designed and engineered an elite sports platform reflecting the iconic AC Milan Rossoneri brand heritage. Built with modern web architecture, interactive training schedules, live news marquee strips, and a frictionless mobile player registration engine.',
+    results: [
+      { metric: '+420%', label: 'Academy Enrollment Registrations' },
+      { metric: 'Official', label: 'AC Milan Academy Partner' },
+      { metric: '1-Click', label: 'WhatsApp Direct Coach & Academy Liaison' },
+      { metric: '0.4s', label: 'Sub-Second Page Load Speed' },
+    ],
+    techStack: ['Next.js App Engine', 'AC Milan Rossoneri Brand System', 'Interactive Enrollment Engine', 'Weekly Training Timetable'],
+    responsiveMockup: '/images/projects/cafc-responsive.webp',
+    gallery: ['/images/projects/cafc-news.webp', '/images/projects/cafc-portal.webp'],
+    milestones: [
+      'Brand-aligned visual architecture co-branded with official AC Milan Academy guidelines',
+      'Integrated online student registration & camp enrollment flow for ages 6–17',
+      'Interactive weekly training timetable and Milan methodology program showcase',
+      'Seamless mobile hotline and WhatsApp integration for immediate parent inquiries',
+    ],
+    nextSlug: 'mint-b2b-solutions',
+    nextTitle: 'Mint B2B Solutions -Offshore Operations Hub',
+  },
+  'mint-b2b-solutions': {
+    title: 'Mint B2B Solutions -Offshore Operations Hub',
+    kicker: 'ENTERPRISE B2B SUCCESS STORY',
+    client: 'Mint Business Solutions Private Limited',
+    liveUrl: 'https://mintb2b.solutions',
+    domain: 'mintb2bsolutions.com',
+    industry: 'Offshore Operations, Paraplanning & Mortgage Processing for Australian Advisers',
+    timeline: 'Completed in 4 Weeks',
+    location: 'Melbourne, Australia & Colombo, Sri Lanka',
+    image: '/images/projects/mintb2b.webp',
+    challenge:
+      'Australian financial advisory, wealth management, and mortgage practices needed enterprise-grade offshore support with guaranteed data compliance (VDI infrastructure, zero local data storage) and seamless Melbourne-Colombo operational alignment.',
+    solution:
+      'Inversify engineered a clean, high-credibility corporate platform built with modern typography (Plus Jakarta Sans & Inter), interactive discovery consultation bookings, comprehensive compliance frameworks, and role-based service deep-dives.',
+    results: [
+      { metric: '+180%', label: 'Qualified Discovery Consultation Requests' },
+      { metric: '100%', label: 'Australian Privacy & Security VDI Compliance' },
+      { metric: '24/7', label: 'Melbourne Practice Liaison & Operational Uptime' },
+      { metric: 'A+', label: 'Enterprise Security & Performance Benchmark' },
+    ],
+    techStack: ['Next.js Corporate Stack', 'Australian Financial Compliance Architecture', 'Discovery Session Engine', 'Clean Corporate Design System'],
+    responsiveMockup: '/images/projects/mintb2b-responsive.webp',
+    gallery: ['/images/projects/mintb2b-capabilities.webp'],
+    milestones: [
+      'High-credibility corporate UI tailored for Australian wealth practices & mortgage brokers',
+      'Interactive service matrix for paraplanning, accounting, and loan tracking',
+      'Compliance showcase highlighting Virtual Desktop Infrastructure & data privacy standards',
+      'Direct discovery session booking engine with Melbourne & Colombo time-zone syncing',
+    ],
+    nextSlug: 'jerseycloud',
+    nextTitle: 'Jersey Cloud -E-Commerce Storefront',
   },
 };
 
+// Map legacy and alternate slugs to real project slugs
+projectDatabase['lankapay-global-gateway'] = projectDatabase['jerseycloud'];
+projectDatabase['ceylon-luxe-organics'] = projectDatabase['jerseycloud'];
+projectDatabase['vertex-cloud-erp'] = projectDatabase['mint-b2b-solutions'];
+projectDatabase['serendib-luxury-hospitality'] = projectDatabase['colombo-athletic-football-club'];
+projectDatabase['ui-ux-design-approach'] = projectDatabase['qaidh'];
+projectDatabase['future-ready-solutions'] = projectDatabase['mint-b2b-solutions'];
+projectDatabase['high-performance-website'] = projectDatabase['jerseycloud'];
+projectDatabase['cafc'] = projectDatabase['colombo-athletic-football-club'];
+projectDatabase['mint'] = projectDatabase['mint-b2b-solutions'];
+projectDatabase['mintb2b'] = projectDatabase['mint-b2b-solutions'];
+projectDatabase['jersey-cloud'] = projectDatabase['jerseycloud'];
+projectDatabase['fusiongear'] = projectDatabase['fusion-gear'];
+projectDatabase['fusion'] = projectDatabase['fusion-gear'];
+projectDatabase['fusion-gear-tracking'] = projectDatabase['fusion-gear'];
+projectDatabase['track-fusiongear'] = projectDatabase['fusion-gear'];
+
 export default function ProjectDetailsPage({ params }) {
   const routeParams = params && typeof params.then === 'function' ? React.use(params) : params;
-  const slug = routeParams?.slug || 'lankapay-global-gateway';
-  const project = projectDatabase[slug] || projectDatabase['lankapay-global-gateway'];
+  const slug = routeParams?.slug || 'jerseycloud';
+  const project = projectDatabase[slug] || projectDatabase['jerseycloud'];
 
   return (
     <main className="project-detail-root">
@@ -206,7 +209,7 @@ export default function ProjectDetailsPage({ params }) {
         <div className="container">
           {/* Executive Metadata Bar */}
           <div className="case-meta-bar p-4 p-md-5 rounded-4 mb-5">
-            <div className="row g-4">
+            <div className="row g-4 align-items-center">
               <div className="col-6 col-lg-3">
                 <span className="case-meta-label text-cyan d-block mb-1">CLIENT</span>
                 <span className="case-meta-val text-white fw-bold" style={{ fontSize: '15px' }}>{project.client}</span>
@@ -219,38 +222,86 @@ export default function ProjectDetailsPage({ params }) {
                 <span className="case-meta-label text-cyan d-block mb-1">PROJECT TIMELINE</span>
                 <span className="case-meta-val text-white fw-bold" style={{ fontSize: '15px' }}>{project.timeline}</span>
               </div>
-              <div className="col-6 col-lg-3">
-                <span className="case-meta-label text-cyan d-block mb-1">LOCATION</span>
-                <span className="case-meta-val text-white fw-bold" style={{ fontSize: '15px' }}>{project.location}</span>
+              <div className="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                <span className="case-meta-label text-cyan d-block mb-1">
+                  {project.liveUrl ? 'LIVE PLATFORM' : 'DEPLOYMENT'}
+                </span>
+                {project.liveUrl ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="d-inline-flex align-items-center gap-2 text-decoration-none fw-bold text-white hover-cyan"
+                    style={{ fontSize: '14.5px' }}
+                  >
+                    <span>{project.domain}</span>
+                    <i className="fa-solid fa-arrow-up-right-from-square text-cyan" style={{ fontSize: '12px' }}></i>
+                  </a>
+                ) : (
+                  <span className="d-inline-flex align-items-center gap-2 text-white fw-bold" style={{ fontSize: '14.5px' }}>
+                    <span>{project.domain}</span>
+                  </span>
+                )}
               </div>
             </div>
           </div>
 
-          {/* Hero Image Showcase with Generous Spacing */}
-          <div className="case-hero-image-frame rounded-4 overflow-hidden mb-5">
+          {/* Hero Image Showcase */}
+          <div className="case-hero-image-frame position-relative">
             <img
               src={project.image}
               alt={project.title}
-              className="w-100 object-fit-cover"
-              style={{ maxHeight: '480px', display: 'block' }}
             />
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="case-live-badge-btn"
+              >
+                <span>Visit Live Website</span>
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            )}
           </div>
 
-          {/* Key Metrics Strip */}
-          <div className="case-results-grid row g-4 mb-5">
+          {/* Key Metrics Strip - 4-col on desktop, 2x2 grid on mobile */}
+          <div className="case-results-grid mb-5">
             {project.results.map((res, idx) => (
-              <div key={idx} className="col-6 col-lg-3">
-                <div className="result-metric-card p-4 rounded-4 text-center h-100">
-                  <div className="result-number text-cyan mb-2" style={{ fontSize: 'clamp(2rem, 3vw, 2.6rem)', fontWeight: 800 }}>
+              <div key={idx} className="case-result-item">
+                <div className="result-metric-card">
+                  <div className="result-number text-cyan mb-1">
                     {res.metric}
                   </div>
-                  <div className="result-label text-white-50" style={{ fontSize: '13.5px', fontWeight: 600 }}>
+                  <div className="result-label">
                     {res.label}
                   </div>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* Multi-Device Responsive Architecture Showcase */}
+          {project.responsiveMockup && (
+            <div className="case-responsive-showcase">
+              <div className="mb-3">
+                <div className="badge-status-pill mb-2">
+                  <span className="beacon-dot"></span>
+                  <span>RESPONSIVE ACROSS ALL SCREENS</span>
+                </div>
+                <h3 className="text-white mb-1" style={{ fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 700 }}>
+                  Flawless Multi-Device Experience
+                </h3>
+              </div>
+              <div className="case-responsive-frame">
+                <img
+                  src={project.responsiveMockup}
+                  alt={`${project.title} - Responsive across desktop, tablet, and mobile`}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          )}
 
           {/* Challenge & Solution Detailed Narrative */}
           <div className="row g-5 my-5">
@@ -286,25 +337,47 @@ export default function ProjectDetailsPage({ params }) {
           </div>
 
           {/* Visual Gallery Proof */}
-          <div className="case-gallery-section my-5">
-            <h3 className="text-white mb-4" style={{ fontSize: '22px', fontWeight: 700 }}>
-              Project Showcase Highlights
-            </h3>
-            <div className="row g-4">
-              {project.gallery.map((img, i) => (
-                <div key={i} className="col-md-4">
-                  <div className="gallery-img-wrap rounded-3 overflow-hidden">
-                    <img
-                      src={img}
-                      alt={`Project Screenshot ${i + 1}`}
-                      className="w-100 object-fit-cover hover-zoom"
-                      style={{ height: '240px', display: 'block' }}
-                    />
+          {project.gallery && project.gallery.length > 0 && (
+            <div className="case-gallery-section">
+              <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                <div>
+                  <div className="badge-status-pill mb-2">
+                    <span className="beacon-dot"></span>
+                    <span>UI & FEATURE SPOTLIGHT</span>
                   </div>
+                  <h3 className="text-white mb-0" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)', fontWeight: 700 }}>
+                    {project.gallery.length > 1 ? 'Project Showcase Highlights' : 'Project Showcase Highlight'}
+                  </h3>
                 </div>
-              ))}
+                <span className="text-secondary" style={{ fontSize: '13px' }}>
+                  {project.gallery.length > 1 ? `${project.gallery.length} Verified Highlights` : 'Verified Platform Showcase'}
+                </span>
+              </div>
+              {project.gallery.length === 1 ? (
+                <div className="gallery-single-wrap">
+                  <img
+                    src={project.gallery[0]}
+                    alt={`${project.title} Feature Highlight`}
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <div className="row">
+                  {project.gallery.map((img, i) => (
+                    <div key={i} className="col-12 col-md-6">
+                      <div className="gallery-img-wrap">
+                        <img
+                          src={img}
+                          alt={`${project.title} Feature Highlight ${i + 1}`}
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
-          </div>
+          )}
 
           {/* Milestones & Consultation Box */}
           <div className="row g-5 my-5 project-delivery-block">
@@ -334,7 +407,7 @@ export default function ProjectDetailsPage({ params }) {
                   <span className="btn-label">Get A Free Project Quote</span>
                 </Link>
                 <a
-                  href="https://wa.me/94771234567?text=Hi%20Inversify,%20I%20saw%20your%20recent%20work%20and%20would%20like%20to%20get%20a%20quote."
+                  href={`https://wa.me/94704621228?text=${encodeURIComponent(`Hi Inversify, I saw your case study on ${project.title} and would like to get a quote.`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="whatsapp-direct-btn w-100 d-flex align-items-center justify-content-center gap-2 p-3 rounded-3"
