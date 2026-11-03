@@ -224,62 +224,8 @@ export default function ServiceDetailsPage({ params }) {
       <section className="service-detail-content-section pt-90 pb-120">
         <div className="container">
           <div className="row g-5">
-            {/* Left Sidebar Menu */}
-            <div className="col-lg-4">
-              <aside className="service-detail-sidebar sticky-top" style={{ top: '100px' }}>
-                <div className="sidebar-nav-card p-4 rounded-4 mb-4">
-                  <span className="sidebar-kicker-label text-cyan d-block mb-3 fw-bold" style={{ fontSize: '12px', letterSpacing: '1px' }}>
-                    ALL INVERSIFY SERVICES
-                  </span>
-                  <ul className="sidebar-links-list list-unstyled mb-0">
-                    {serviceListNav.map((s) => (
-                      <li key={s.slug} className="mb-2">
-                        <Link
-                          href={`/services/${s.slug}`}
-                          className={`sidebar-service-link d-flex align-items-center justify-content-between p-3 rounded-3 ${
-                            s.slug === slug ? 'active' : ''
-                          }`}
-                        >
-                          <span style={{ fontSize: '14.5px', fontWeight: 600 }}>{s.name}</span>
-                          <i className="fa-solid fa-arrow-right" style={{ fontSize: '12px' }}></i>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Consultation Card */}
-                <div className="sidebar-cta-card p-4 p-md-5 rounded-4 text-center">
-                  <div className="cta-icon-circle mb-3 mx-auto">
-                    <i className="fa-solid fa-comments text-cyan" style={{ fontSize: '20px' }}></i>
-                  </div>
-                  <h4 className="text-white mb-2" style={{ fontSize: '19px', fontWeight: 700 }}>
-                    Need This For Your Business?
-                  </h4>
-                  <p className="text-secondary mb-4" style={{ fontSize: '14px', lineHeight: 1.6 }}>
-                    Connect with our team in Colombo for a free cost estimate and custom timeline for your project.
-                  </p>
-                  <Link
-                    href={`/contact?service=${encodeURIComponent(service.title)}`}
-                    className="theme-btn-one hero-cta-pill w-100 justify-content-center mb-3"
-                  >
-                    <span className="btn-label">Get a Free Cost Estimate</span>
-                  </Link>
-                  <a
-                    href="https://wa.me/94704621228?text=Hi%20Inversify,%20I'd%20like%20to%20get%20a%20quote%20for%20a%20website%20project."
-                    target="_blank"
-                    rel="noreferrer"
-                    className="whatsapp-direct-btn w-100 d-flex align-items-center justify-content-center gap-2 p-3 rounded-3"
-                  >
-                    <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i>
-                    <span>Chat on WhatsApp</span>
-                  </a>
-                </div>
-              </aside>
-            </div>
-
-            {/* Right Main Content */}
-            <div className="col-lg-8">
+            {/* Main Editorial Content (Priority 1 on mobile, 8-col right on desktop) */}
+            <div className="col-lg-8 order-1 order-lg-2">
               <article className="service-main-editorial">
                 {/* Hero Showcase Graphic */}
                 <div className="service-hero-frame rounded-4 overflow-hidden mb-5">
@@ -424,6 +370,60 @@ export default function ServiceDetailsPage({ params }) {
                   </div>
                 </div>
               </article>
+            </div>
+
+            {/* Sidebar Navigation & Consultation (Priority 2 on mobile, 4-col left on desktop) */}
+            <div className="col-lg-4 order-2 order-lg-1">
+              <aside className="service-detail-sidebar sticky-top" style={{ top: '100px' }}>
+                <div className="sidebar-nav-card p-4 rounded-4 mb-4">
+                  <span className="sidebar-kicker-label text-cyan d-block mb-3 fw-bold" style={{ fontSize: '12px', letterSpacing: '1px' }}>
+                    ALL INVERSIFY SERVICES
+                  </span>
+                  <ul className="sidebar-links-list list-unstyled mb-0">
+                    {serviceListNav.map((s) => (
+                      <li key={s.slug} className="mb-2">
+                        <Link
+                          href={`/services/${s.slug}`}
+                          className={`sidebar-service-link d-flex align-items-center justify-content-between p-3 rounded-3 ${
+                            s.slug === slug ? 'active' : ''
+                          }`}
+                        >
+                          <span style={{ fontSize: '14.5px', fontWeight: 600 }}>{s.name}</span>
+                          <i className="fa-solid fa-arrow-right" style={{ fontSize: '12px' }}></i>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Consultation Card */}
+                <div className="sidebar-cta-card p-4 p-md-5 rounded-4 text-center">
+                  <div className="cta-icon-circle mb-3 mx-auto">
+                    <i className="fa-solid fa-comments text-cyan" style={{ fontSize: '20px' }}></i>
+                  </div>
+                  <h4 className="text-white mb-2" style={{ fontSize: '19px', fontWeight: 700 }}>
+                    Need This For Your Business?
+                  </h4>
+                  <p className="text-secondary mb-4" style={{ fontSize: '14px', lineHeight: 1.6 }}>
+                    Connect with our team in Colombo for a free cost estimate and custom timeline for your project.
+                  </p>
+                  <Link
+                    href={`/contact?service=${encodeURIComponent(service.title)}`}
+                    className="theme-btn-one hero-cta-pill w-100 justify-content-center mb-3"
+                  >
+                    <span className="btn-label">Get a Free Cost Estimate</span>
+                  </Link>
+                  <a
+                    href="https://wa.me/94704621228?text=Hi%20Inversify,%20I'd%20like%20to%20get%20a%20quote%20for%20a%20website%20project."
+                    target="_blank"
+                    rel="noreferrer"
+                    className="whatsapp-direct-btn w-100 d-flex align-items-center justify-content-center gap-2 p-3 rounded-3"
+                  >
+                    <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i>
+                    <span>Chat on WhatsApp</span>
+                  </a>
+                </div>
+              </aside>
             </div>
           </div>
         </div>

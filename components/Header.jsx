@@ -8,7 +8,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Work' },
   { href: '/services', label: 'Services' },
-  { href: '/blog', label: 'Journal' },
+  // { href: '/blog', label: 'Journal' }, // Temporarily hidden - uncomment to re-enable
 ];
 
 export default function Header() {

@@ -12,7 +12,7 @@ export default function AboutSection() {
       <div className="studio-about-heading">
         <h2>Not just a digital<br /><em>presence.</em> <span className="formal-cap-a">A</span> point of view.</h2>
         <div className="studio-about-intro">
-          <p>We bring strategy, design, custom software and AI engineering into one room. The result is high-performance digital work that solves real operational challenges.</p>
+          <p>We bring strategy, design, custom software and AI into one room. The result is high-performance digital craft that solves operational bottlenecks and accelerates growth.</p>
           <Link href="/services" className="studio-arrow-link">Meet our capabilities <span aria-hidden="true">↗</span></Link>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function AboutSection() {
         </div>
         <div className="studio-about-note">
           <span className="studio-index">A focused studio with a wide lens.</span>
-          <p>From ambitious online stores to complex bespoke management platforms, we partner with teams who care about craft and measurable momentum.</p>
+          <p>From bespoke storefronts to enterprise operations portals, we partner with teams who value exceptional craft and measurable momentum.</p>
           <Link href="/projects" className="studio-arrow-link">See our selected work <span aria-hidden="true">↗</span></Link>
         </div>
         <div className="studio-stat-block">

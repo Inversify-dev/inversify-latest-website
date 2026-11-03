@@ -9,7 +9,7 @@ const projects = [
     category: 'E-Commerce / Retail Store',
     year: '2026',
     image: '/images/projects/jerseycloud.webp',
-    result: 'High-converting sportswear store with automated online checkout and island-wide delivery.',
+    result: 'High-converting online store with seamless card checkout.',
     domain: 'jerseycloud.lk',
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     category: 'Film Direction / Portfolio',
     year: '2026',
     image: '/images/projects/qaidh.webp',
-    result: 'Cinematic portfolio and visual showcase for an international filmmaker and creative director.',
+    result: 'Cinematic portfolio for an international filmmaker & director.',
     domain: 'qaidh.com',
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     category: 'Sports Academy / AC Milan Partner',
     year: '2026',
     image: '/images/projects/cafc.webp',
-    result: 'Official AC Milan Academy enrollment engine and youth tournament platform.',
+    result: 'AC Milan partner academy and youth enrollment portal.',
     domain: 'colomboathleticfootballclub.com',
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     category: 'Enterprise / B2B Operations',
     year: '2026',
     image: '/images/projects/mintb2b.webp',
-    result: 'Secure offshore back-office hub built for Australian financial advisory practices.',
+    result: 'Secure operations hub built for Australian advisory practices.',
     domain: 'mintb2bsolutions.com',
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     category: 'Order Management System',
     year: '2026',
     image: '/images/projects/fusiongear.webp',
-    result: 'Centralised operations dashboard with real-time customer package tracking.',
+    result: 'Operations dashboard with live customer order tracking.',
     domain: 'Internal System',
   },
 ];

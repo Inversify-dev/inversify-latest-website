@@ -16,7 +16,7 @@ export default function FaqSection() {
     <section id="faq" className="studio-faq studio-section">
       <div className="studio-section-topline"><span>05 / THE DETAILS</span><span>Clarity is part of good work</span></div>
       <div className="studio-faq-layout">
-        <div className="studio-faq-intro"><span className="studio-kicker">A FEW GOOD QUESTIONS</span><h2>Curious?<br /><em>Start here.</em></h2><p>Still wondering if we’re the right fit? Tell us what you’re thinking-we’re happy to talk it through.</p><a href="mailto:invert@inversify.lk" className="studio-arrow-link">Ask us directly <span aria-hidden="true">↗</span></a></div>
+        <div className="studio-faq-intro"><span className="studio-kicker">A FEW GOOD QUESTIONS</span><h2>Curious?<br /><em>Start here.</em></h2><p>Have questions about timing, tech stack, or scope? We are always happy to talk through the details.</p><a href="mailto:invert@inversify.lk" className="studio-arrow-link">Ask us directly <span aria-hidden="true">↗</span></a></div>
         <div className="studio-faq-list">{faqs.map((item, i) => <article className={`studio-faq-item ${active === i ? 'is-open' : ''}`} key={item.q}><button type="button" className="studio-faq-question" aria-expanded={active === i} aria-controls={`studio-faq-answer-${i}`} onClick={() => setActive(active === i ? -1 : i)}><span className="studio-faq-number">0{i + 1}</span><span>{item.q}</span><span className="studio-faq-toggle" aria-hidden="true">{active === i ? '−' : '+'}</span></button>{active === i && <div id={`studio-faq-answer-${i}`} className="studio-faq-answer"><p>{item.a}</p></div>}</article>)}</div>
       </div>
     </section>

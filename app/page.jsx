@@ -9,7 +9,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import FeatureServices from '../components/FeatureServices';
 import FaqSection from '../components/FaqSection';
 import TestimonialSection from '../components/TestimonialSection';
-import BlogSection from '../components/BlogSection';
+// import BlogSection from '../components/BlogSection'; // Temporarily hidden - uncomment to re-enable
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -26,7 +26,8 @@ export default function Home() {
           <FeatureServices />
           <FaqSection />
           <TestimonialSection />
-          <BlogSection />
+          {/* Journal section temporarily hidden - uncomment below to restore */}
+          {/* <BlogSection /> */}
           <ContactSection />
           <Footer />
         </div>

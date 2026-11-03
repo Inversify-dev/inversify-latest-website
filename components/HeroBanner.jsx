@@ -18,7 +18,7 @@ export default function HeroBanner() {
             We make<br /><span className="hero-font-accent">digital</span> mean<br className="hero-small-break" /> something.
           </h1>
           <div className="studio-hero-bottom" data-reveal="up">
-            <p>Strategy, design, custom software and AI engineering for forward-thinking businesses. Thoughtful craft, built to make a difference.</p>
+            <p>Strategy, design, custom software and AI engineering for ambitious brands. Built with craft, measured in momentum.</p>
             <div className="studio-hero-actions">
               <Link href="/contact" className="studio-button studio-button-primary"><span>Start a conversation</span><span className="studio-button-icon" aria-hidden="true">↗</span></Link>
               <Link href="/projects" className="studio-button studio-button-quiet"><span>See what we’ve made</span><span className="studio-button-icon" aria-hidden="true">↗</span></Link>
