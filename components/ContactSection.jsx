@@ -60,7 +60,7 @@ export default function ContactSection() {
             <a href="https://wa.me/94704621228" target="_blank" rel="noreferrer">Talk on WhatsApp <span aria-hidden="true">↗</span></a>
             <span>Colombo, Sri Lanka</span>
           </div>
-          <div className="studio-contact-location"><span className="status-pip" /> Direct engineer consultation · Rapid response</div>
+          <div className="studio-contact-location">Direct engineer consultation · Rapid response</div>
         </div>
 
         <div className="studio-contact-form-wrap">

@@ -27,7 +27,6 @@ export default function Footer() {
       <div className="studio-footer-grid studio-footer-grid-3col">
         <div className="studio-footer-about">
           <p>We build high-performance digital products for businesses moving forward.</p>
-          <div className="studio-footer-location"><span className="status-pip" /> COLOMBO · WORKING EVERYWHERE</div>
         </div>
         <div className="studio-footer-links">
           <span className="studio-footer-heading">EXPLORE</span>

@@ -281,23 +281,33 @@ export default function ContactPage() {
                     )}
 
                     {/* What service do you need? */}
-                    <div className="mb-4" role="group" aria-labelledby="contact-service-label">
-                      <label id="contact-service-label" className="field-label-clean d-block mb-2">
+                    <div className="contact-service-selector-wrap mb-4" role="group" aria-labelledby="contact-service-label">
+                      <label id="contact-service-label" className="field-label-clean d-block mb-3">
                         What service do you need? *
                       </label>
-                      <div className="choice-chip-group d-flex flex-wrap gap-2">
-                        {serviceOptions.map((opt) => (
-                          <button
-                            key={opt.label}
-                            type="button"
-                            onClick={() => handleSelectService(opt.label)}
-                            aria-pressed={formData.service === opt.label}
-                            className={`choice-chip-btn ${formData.service === opt.label ? 'active' : ''}`}
-                          >
-                            <i className={`fa-solid ${opt.icon} me-2`}></i>
-                            {opt.label}
-                          </button>
-                        ))}
+                      <div className="choice-chip-group">
+                        {serviceOptions.map((opt) => {
+                          const isSelected = formData.service === opt.label;
+                          return (
+                            <button
+                              key={opt.label}
+                              type="button"
+                              onClick={() => handleSelectService(opt.label)}
+                              aria-pressed={isSelected}
+                              className={`choice-chip-btn ${isSelected ? 'active' : ''}`}
+                            >
+                              <span className="choice-chip-left">
+                                <span className="choice-chip-icon" aria-hidden="true">
+                                  <i className={`fa-solid ${opt.icon}`}></i>
+                                </span>
+                                <span className="choice-chip-label">{opt.label}</span>
+                              </span>
+                              <span className="choice-chip-indicator" aria-hidden="true">
+                                <i className={`fa-solid ${isSelected ? 'fa-circle-check' : 'fa-circle'}`}></i>
+                              </span>
+                            </button>
+                          );
+                        })}
                       </div>
                     </div>
 

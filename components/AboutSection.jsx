@@ -27,7 +27,7 @@ export default function AboutSection() {
         </div>
         <div className="studio-stat-block">
           <div className="studio-stat-number-wrap">
-            <span className="studio-stat-number counter-animate">250</span>
+            <span className="studio-stat-number counter-animate">10</span>
             <span className="studio-stat-plus">+</span>
           </div>
           <span className="studio-stat-label">digital platforms &amp;<br />systems delivered</span>
