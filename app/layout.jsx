@@ -72,6 +72,10 @@ export default function RootLayout({ children }) {
     description: 'Premier studio for Website Design & Development, E-Commerce Stores, Custom Software Systems, and AI Business Automation in Colombo, Sri Lanka.',
     telephone: '+94704621228',
     email: 'invert@inversify.lk',
+    sameAs: [
+      'https://www.instagram.com/building.inversify/',
+      'https://www.tiktok.com/@building.inversify',
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Level 14, World Trade Center, Echelon Square',

@@ -219,12 +219,45 @@ export default function ContactPage() {
                         </a>
                       </div>
                     </div>
+
+                    {/* Follow Channels */}
+                    <div className="studio-channel-card d-flex align-items-start gap-3 p-3 rounded-3">
+                      <div className="channel-icon-wrap mt-1">
+                        <i className="fa-solid fa-share-nodes"></i>
+                      </div>
+                      <div>
+                        <span className="channel-card-label d-block mb-2">
+                          FOLLOW OUR WORK
+                        </span>
+                        <div className="d-flex align-items-center gap-2 flex-wrap">
+                          <a
+                            href="https://www.instagram.com/building.inversify/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="contact-social-pill"
+                            aria-label="Instagram"
+                          >
+                            <i className="fa-brands fa-instagram" style={{ color: '#E1306C' }}></i>
+                            <span>Instagram</span>
+                          </a>
+                          <a
+                            href="https://www.tiktok.com/@building.inversify"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="contact-social-pill"
+                            aria-label="TikTok"
+                          >
+                            <i className="fa-brands fa-tiktok" style={{ color: '#00f2fe' }}></i>
+                            <span>TikTok</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <div className="pt-3 border-top border-secondary-subtle mt-auto contact-info-bottom-status">
                   <div className="d-flex align-items-center gap-2" style={{ fontSize: '13.5px', color: '#c5c5d8' }}>
-                    <span className="beacon-dot" style={{ background: '#00ffb2' }}></span>
                     <span>Quick response time · Same-day follow-up guaranteed.</span>
                   </div>
                 </div>

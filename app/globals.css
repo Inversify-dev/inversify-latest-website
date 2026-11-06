@@ -11173,13 +11173,38 @@ html {
   padding: 18px !important;
 }
 
-.contact-page-root .contact-info-panel a[target="_blank"] {
+.contact-page-root .contact-info-panel a.whatsapp-direct-pill {
   min-height: 58px;
   color: #126f50 !important;
   background: #e7f5ec !important;
   border: 1px solid #12804e40 !important;
   border-radius: 999px !important;
   font: 650 15px/1.35 var(--font-ui) !important;
+}
+
+.contact-page-root .contact-social-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 18px !important;
+  min-height: 40px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 999px !important;
+  color: #ffffff !important;
+  font-family: var(--font-body), 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.contact-page-root .contact-social-pill:hover {
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-color: rgba(118, 246, 245, 0.45) !important;
+  color: #76f6f5 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
 .contact-page-root .contact-form-panel {
@@ -15159,7 +15184,29 @@ svg {
 .mobile-contact-info p {
   color: #b5b0c8 !important;
   font-size: 12px !important;
-  margin: 6px 0 16px !important;
+  margin: 6px 0 14px !important;
+}
+
+.mobile-drawer-social-link {
+  color: #c5c2d6 !important;
+  font-family: var(--font-mono), monospace !important;
+  font-size: 12.5px !important;
+  font-weight: 550 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 12px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 999px !important;
+  transition: all 0.2s ease !important;
+}
+
+.mobile-drawer-social-link:hover {
+  color: #76f6f5 !important;
+  border-color: rgba(118, 246, 245, 0.3) !important;
+  background: rgba(118, 246, 245, 0.08) !important;
 }
 
 .mobile-cta-btn {
@@ -18104,24 +18151,63 @@ canvas {
   }
 }
 
-/* 3-Column Footer Grid without Newsletter */
+/* 3-Column and 4-Column Footer Grids */
 .studio-footer-grid.studio-footer-grid-3col {
   grid-template-columns: 1.8fr 1fr 1.3fr !important;
   gap: clamp(32px, 5vw, 64px) !important;
 }
 
+.studio-footer-grid.studio-footer-grid-4col {
+  grid-template-columns: 1.5fr 0.85fr 1.25fr 0.9fr !important;
+  gap: clamp(24px, 4vw, 56px) !important;
+}
+
 @media (max-width: 991px) {
-  .studio-footer-grid.studio-footer-grid-3col {
+  .studio-footer-grid.studio-footer-grid-3col,
+  .studio-footer-grid.studio-footer-grid-4col {
     grid-template-columns: 1fr 1fr !important;
     gap: 32px !important;
   }
 }
 
 @media (max-width: 640px) {
-  .studio-footer-grid.studio-footer-grid-3col {
+  .studio-footer-grid.studio-footer-grid-3col,
+  .studio-footer-grid.studio-footer-grid-4col {
     grid-template-columns: 1fr !important;
     gap: 28px !important;
   }
+}
+
+/* Footer Social Logo Buttons (Icon-Only, Clean Minimal Vibe) */
+.studio-footer-social-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 6px !important;
+}
+
+.studio-footer-social-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  border-radius: 12px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #e5e2e8 !important;
+  font-size: 19px !important;
+  text-decoration: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.studio-footer-social-btn:hover {
+  background: rgba(118, 246, 245, 0.12) !important;
+  border-color: rgba(118, 246, 245, 0.45) !important;
+  color: #76f6f5 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 18px rgba(118, 246, 245, 0.2) !important;
 }
 
 /* =========================================================================
@@ -19195,7 +19281,8 @@ html, body {
     line-height: 1.35 !important;
   }
 
-  .studio-footer-grid.studio-footer-grid-3col {
+  .studio-footer-grid.studio-footer-grid-3col,
+  .studio-footer-grid.studio-footer-grid-4col {
     grid-template-columns: 1fr !important;
     gap: clamp(28px, 5vw, 40px) !important;
   }
@@ -19341,7 +19428,8 @@ html, body {
     grid-column: 1 / -1 !important;
   }
 
-  .studio-footer-grid.studio-footer-grid-3col {
+  .studio-footer-grid.studio-footer-grid-3col,
+  .studio-footer-grid.studio-footer-grid-4col {
     grid-template-columns: 1fr 1fr !important;
     gap: 36px !important;
   }

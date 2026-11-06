@@ -24,7 +24,7 @@ export default function Footer() {
         <Link href="/contact" className="studio-footer-cta">Have a good one in mind? <span aria-hidden="true">↗</span></Link>
       </div>
       <div className="studio-footer-rule" />
-      <div className="studio-footer-grid studio-footer-grid-3col">
+      <div className="studio-footer-grid studio-footer-grid-4col">
         <div className="studio-footer-about">
           <p>We build high-performance digital products for businesses moving forward.</p>
         </div>
@@ -40,6 +40,29 @@ export default function Footer() {
           <a href="mailto:invert@inversify.lk">invert@inversify.lk</a>
           <a href="tel:+94704621228">+94 70 462 1228</a>
           <a href="https://wa.me/94704621228" target="_blank" rel="noreferrer">WhatsApp ↗</a>
+        </div>
+        <div className="studio-footer-links">
+          <span className="studio-footer-heading">SOCIAL</span>
+          <div className="studio-footer-social-row">
+            <a
+              href="https://www.instagram.com/building.inversify/"
+              target="_blank"
+              rel="noreferrer"
+              className="studio-footer-social-btn"
+              aria-label="Instagram"
+            >
+              <i className="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@building.inversify"
+              target="_blank"
+              rel="noreferrer"
+              className="studio-footer-social-btn"
+              aria-label="TikTok"
+            >
+              <i className="fa-brands fa-tiktok" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div className="studio-footer-bottom">

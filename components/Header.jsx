@@ -105,6 +105,14 @@ export default function Header() {
             </nav>
             <div className="mobile-drawer-footer">
               <div className="mobile-contact-info"><span className="loc-label">Colombo · Sri Lanka</span><p>Independent thinking. Measurable momentum.</p></div>
+              <div className="mobile-drawer-socials d-flex align-items-center gap-3 mb-3">
+                <a href="https://www.instagram.com/building.inversify/" target="_blank" rel="noreferrer" className="mobile-drawer-social-link">
+                  <i className="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.tiktok.com/@building.inversify" target="_blank" rel="noreferrer" className="mobile-drawer-social-link">
+                  <i className="fa-brands fa-tiktok"></i> TikTok
+                </a>
+              </div>
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="mobile-cta-btn"><span>Start a project</span><span aria-hidden="true">↗</span></Link>
             </div>
           </div>
