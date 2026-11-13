@@ -108,6 +108,8 @@ export const metadata = {
   },
 };
 
+//hi
+
 import ScrollAnimations from '../components/ScrollAnimations';
 
 export default function RootLayout({ children }) {
