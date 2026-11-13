@@ -10809,7 +10809,8 @@ html {
 }
 
 .studio-form-submit button:hover span {
-  transform: rotate(45deg);
+  /* No animation - text and icons remain stable and normal */
+  transform: none !important;
 }
 
 .studio-form-success h3 {
@@ -20518,7 +20519,7 @@ html, body {
 }
 
 /* =========================================================================
-   HOMEPAGE CONTACT SUBMIT BUTTON FIX (PREVENT DOUBLE CIRCLE & TEXT OVERFLOW)
+   HOMEPAGE CONTACT SUBMIT BUTTON & SUCCESS ACTIONS (ZERO DISTORTION / NO WEIRD ANIMATIONS)
    ========================================================================= */
 .studio-form-submit button {
   display: inline-flex !important;
@@ -20532,14 +20533,22 @@ html, body {
   color: #09061a !important;
   cursor: pointer !important;
   box-shadow: 0 4px 20px rgba(181, 65, 250, 0.25) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
   white-space: nowrap !important;
   gap: 16px !important;
+  /* Strictly disable any tilt, rotation, or jump */
+  transform: none !important;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease !important;
 }
 
 .studio-form-submit button:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 8px 28px rgba(118, 246, 245, 0.45) !important;
+  transform: none !important;
+  box-shadow: 0 6px 24px rgba(118, 246, 245, 0.4) !important;
+}
+
+.studio-form-submit button:hover span,
+.studio-form-submit button:hover .submit-btn-label,
+.studio-form-submit button:hover .submit-btn-icon {
+  transform: none !important;
 }
 
 .studio-form-submit button .submit-btn-label,
@@ -20559,6 +20568,7 @@ html, body {
   white-space: nowrap !important;
   line-height: 1 !important;
   text-align: left !important;
+  transform: none !important;
 }
 
 .studio-form-submit button .submit-btn-icon,
@@ -20575,13 +20585,81 @@ html, body {
   align-items: center !important;
   justify-content: center !important;
   flex: 0 0 38px !important;
-  transition: transform 0.22s ease !important;
   padding: 0 !important;
   margin: 0 !important;
+  transform: none !important;
 }
 
-.studio-form-submit button:hover .submit-btn-icon {
-  transform: translate(2px, -2px) !important;
+/* =========================================================================
+   HOMEPAGE CONTACT SUCCESS ACTIONS (DUAL CLEAN PILLS, NO ROTATE / ANIMATIONS)
+   ========================================================================= */
+.studio-success-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin-top: 24px !important;
+  width: 100% !important;
+  flex-wrap: wrap !important;
+}
+
+.studio-success-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  min-height: 50px !important;
+  padding: 12px 28px !important;
+  border-radius: 999px !important;
+  font-family: var(--font-ui), 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  border: 1px solid transparent !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  transform: none !important;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.studio-success-btn:hover {
+  transform: none !important;
+}
+
+.studio-success-btn span {
+  transform: none !important;
+}
+
+/* Button 1: Send Another Inquiry (Secondary Glass Pill) */
+.studio-success-btn-primary {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.22) !important;
+  color: #ffffff !important;
+}
+
+.studio-success-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  color: #ffffff !important;
+}
+
+/* Button 2: Chat on WhatsApp (Vibrant Accent Pill) */
+.studio-success-btn-whatsapp {
+  background: rgba(37, 211, 102, 0.15) !important;
+  border-color: rgba(37, 211, 102, 0.45) !important;
+  color: #25d366 !important;
+}
+
+.studio-success-btn-whatsapp:hover {
+  background: #25d366 !important;
+  border-color: #25d366 !important;
+  color: #09061a !important;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3) !important;
+}
+
+.studio-success-btn-whatsapp i {
+  font-size: 18px !important;
 }
 
 @media (max-width: 768px) {
@@ -20589,5 +20667,22 @@ html, body {
     width: 100% !important;
     min-height: 54px !important;
     padding: 8px 12px 8px 22px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .studio-success-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    margin-top: 20px !important;
+  }
+
+  .studio-success-btn {
+    width: 100% !important;
+    min-height: 52px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 12px 20px !important;
   }
 }

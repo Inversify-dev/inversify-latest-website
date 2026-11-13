@@ -117,24 +117,26 @@ export default function ContactSection() {
               <span style={{ color: '#76F6F5', fontWeight: 600 }}>INQUIRY RECEIVED</span>
               <h3>Message <em>delivered.</em></h3>
               <p>Thank you, {formData.name || 'there'}. Your project brief has been delivered directly to our Colombo engineering team at <a href="mailto:invert@inversify.lk" style={{ color: '#76F6F5', textDecoration: 'none' }}>invert@inversify.lk</a> and logged in our system. We will follow up within 24 hours.</p>
-              <div style={{ display: 'flex', gap: '14px', alignItems: 'center', flexWrap: 'wrap', marginTop: '14px' }}>
+              {/* Clean, fully responsive dual action buttons without awkward animations */}
+              <div className="studio-success-actions">
                 <button
                   type="button"
-                  className="studio-contact-reset"
+                  className="studio-success-btn studio-success-btn-primary"
                   onClick={() => {
                     setSubmitted(false);
                     setFormData({ name: '', email: '', service: serviceOptions[0], message: '' });
                   }}
                 >
-                  Send another inquiry
+                  <span>Send another inquiry</span>
                 </button>
                 <a
-                  href="https://wa.me/94704621228"
+                  href="https://wa.me/94704621228?text=Hi%20Inversify%2C%20I%20just%20submitted%20an%20inquiry%20on%20your%20website."
                   target="_blank"
                   rel="noreferrer"
-                  style={{ color: '#76F6F5', fontSize: '13.5px', textDecoration: 'none', fontWeight: 600 }}
+                  className="studio-success-btn studio-success-btn-whatsapp"
                 >
-                  Chat on WhatsApp ↗
+                  <i className="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  <span>Chat on WhatsApp</span>
                 </a>
               </div>
             </div>
