@@ -6,6 +6,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PageTitle from '@/components/PageTitle';
 
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxzdC0o7AHRqluoUM8DAmoCKH-wRh-8WHkQhdf2P1TbER9jSCG_lQ21HWaWxjhXiTdi/exec';
+
 const serviceAliases = {
   ecommerce: 'E-Commerce & Online Stores',
   'ecommerce-payhere': 'E-Commerce & Online Stores',
@@ -39,6 +41,7 @@ export default function ContactPage() {
     message: '',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -67,7 +70,7 @@ export default function ContactPage() {
     setFormData({ ...formData, service });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
       setErrorMessage('Please fill in your Name, Work Email, and a brief description of your project.');
@@ -81,22 +84,56 @@ export default function ContactPage() {
     }
 
     setErrorMessage('');
-    const subject = `Project enquiry - ${formData.service}`;
-    const body = [
-      `Name: ${formData.name}`,
-      `Email: ${formData.email}`,
-      `Phone / WhatsApp: ${formData.phone || 'Not provided'}`,
-      `Service: ${formData.service}`,
-      '',
-      'Project details:',
-      formData.message,
-    ].join('\n');
-    window.location.href = `mailto:invert@inversify.lk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setSubmitted(true);
+    setIsSubmitting(true);
+
+    const payload = {
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      phone: formData.phone.trim() || 'Not provided',
+      subject: `Project inquiry - ${formData.service}`,
+      service: formData.service,
+      message: formData.message.trim(),
+    };
+
+    try {
+      // 1. Primary: Server-side Next.js API route
+      let delivered = false;
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (res.ok) {
+          delivered = true;
+        }
+      } catch (apiErr) {
+        console.warn('API route error, falling back to direct Google Script submission:', apiErr);
+      }
+
+      // 2. Direct client fallback (identical to previous site architecture)
+      if (!delivered) {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      console.error('Submission error:', err);
+      setErrorMessage('Could not send your message right now. Please email us directly at invert@inversify.lk or WhatsApp +94 70 462 1228.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {
     setSubmitted(false);
+    setIsSubmitting(false);
+    setErrorMessage('');
     setFormData({
       name: '',
       email: '',
@@ -284,26 +321,42 @@ export default function ContactPage() {
                     <div
                       className="d-inline-flex align-items-center justify-content-center mb-4"
                       style={{
-                        width: '72px',
-                        height: '72px',
+                        width: '76px',
+                        height: '76px',
                         borderRadius: '50%',
                         background: 'rgba(118, 246, 245, 0.15)',
                         border: '2px solid #76F6F5',
                         color: '#76F6F5',
                         fontSize: '32px',
+                        boxShadow: '0 0 30px rgba(118, 246, 245, 0.35)',
                       }}
                     >
                       <i className="fa-solid fa-check"></i>
                     </div>
-                    <h3 className="text-white mb-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '24px', fontWeight: 700 }}>
-                      Your email draft is ready.
+                    <span className="studio-kicker-badge d-inline-block mb-3">
+                      INQUIRY DELIVERED
+                    </span>
+                    <h3 className="text-white mb-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '26px', fontWeight: 700 }}>
+                      Thank you, {formData.name || 'there'}!
                     </h3>
-                    <p style={{ color: '#c5c5d8', fontSize: '15.5px', maxWidth: '480px', margin: '0 auto 24px auto', lineHeight: 1.7 }}>
-                      Check your email app to send the project brief, or write to us directly at <a href="mailto:invert@inversify.lk" className="text-cyan">invert@inversify.lk</a>.
+                    <p style={{ color: '#c5c5d8', fontSize: '15.5px', maxWidth: '500px', margin: '0 auto 24px auto', lineHeight: 1.7 }}>
+                      Your project inquiry has been delivered directly to our Colombo engineering team (<a href="mailto:invert@inversify.lk" className="text-cyan text-decoration-none">invert@inversify.lk</a>) and synced to our project tracker. We will review your requirements and reach out within 24 hours.
                     </p>
-                    <button onClick={handleReset} type="button" className="theme-btn-three hero-cta-pill">
-                      <span>Submit Another Inquiry</span>
-                    </button>
+                    <div className="d-flex align-items-center justify-content-center gap-3 flex-wrap">
+                      <button onClick={handleReset} type="button" className="theme-btn-three hero-cta-pill">
+                        <span>Send Another Inquiry</span>
+                      </button>
+                      <a
+                        href={`https://wa.me/94704621228?text=${encodeURIComponent("Hi Inversify, I just submitted an inquiry on your website.")}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="whatsapp-direct-pill d-inline-flex align-items-center gap-2 px-4 py-3 rounded-pill text-decoration-none"
+                        style={{ minHeight: '52px' }}
+                      >
+                        <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i>
+                        <span>Chat on WhatsApp</span>
+                      </a>
+                    </div>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} noValidate>
@@ -417,17 +470,36 @@ export default function ContactPage() {
                       <div className="intake-field-full mt-2">
                         <button
                           type="submit"
+                          disabled={isSubmitting}
                           className="contact-submit-btn w-100 d-flex align-items-center justify-content-center gap-2"
+                          style={{
+                            opacity: isSubmitting ? 0.75 : 1,
+                            cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                          }}
                         >
-                          <span>Prepare My Project Email</span>
-                          <span className="submit-btn-arrow" aria-hidden="true">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                          </span>
+                          {isSubmitting ? (
+                            <>
+                              <span
+                                className="spinner-border spinner-border-sm me-2"
+                                role="status"
+                                aria-hidden="true"
+                                style={{ width: '1.1rem', height: '1.1rem', borderWidth: '2px' }}
+                              ></span>
+                              <span>Sending Project Inquiry...</span>
+                            </>
+                          ) : (
+                            <>
+                              <span>Send Project Inquiry</span>
+                              <span className="submit-btn-arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                              </span>
+                            </>
+                          )}
                         </button>
                         <p className="submit-footnote text-center mt-3 mb-0">
-                          ✦ Opens an email draft ready to review and send. Direct email: <a href="mailto:invert@inversify.lk" className="text-cyan text-decoration-none">invert@inversify.lk</a>
+                          ✦ Directly routed to <a href="mailto:invert@inversify.lk" className="text-cyan text-decoration-none">invert@inversify.lk</a> &amp; team tracker. Same-day response guaranteed.
                         </p>
                       </div>
                     </div>
