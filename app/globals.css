@@ -20516,3 +20516,78 @@ html, body {
     text-align: center !important;
   }
 }
+
+/* =========================================================================
+   HOMEPAGE CONTACT SUBMIT BUTTON FIX (PREVENT DOUBLE CIRCLE & TEXT OVERFLOW)
+   ========================================================================= */
+.studio-form-submit button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  min-height: 54px !important;
+  padding: 8px 10px 8px 24px !important;
+  background: linear-gradient(135deg, #b541fa 0%, #76f6f5 100%) !important;
+  border-radius: 999px !important;
+  border: none !important;
+  color: #09061a !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 20px rgba(181, 65, 250, 0.25) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  white-space: nowrap !important;
+  gap: 16px !important;
+}
+
+.studio-form-submit button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(118, 246, 245, 0.45) !important;
+}
+
+.studio-form-submit button .submit-btn-label,
+.studio-form-submit button span.submit-btn-label {
+  background: transparent !important;
+  color: #09061a !important;
+  border-radius: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  font-family: var(--font-ui), 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+  display: inline-block !important;
+  flex: 0 1 auto !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  text-align: left !important;
+}
+
+.studio-form-submit button .submit-btn-icon,
+.studio-form-submit button span.submit-btn-icon {
+  background: #09061a !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  font-size: 17px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 38px !important;
+  transition: transform 0.22s ease !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.studio-form-submit button:hover .submit-btn-icon {
+  transform: translate(2px, -2px) !important;
+}
+
+@media (max-width: 768px) {
+  .studio-form-submit button {
+    width: 100% !important;
+    min-height: 54px !important;
+    padding: 8px 12px 8px 22px !important;
+  }
+}

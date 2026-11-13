@@ -164,13 +164,13 @@ export default function ContactSection() {
                 >
                   {isSubmitting ? (
                     <>
-                      <span>Sending inquiry...</span>
-                      <span aria-hidden="true" style={{ fontSize: '14px' }}>⏳</span>
+                      <span className="submit-btn-label">Sending inquiry...</span>
+                      <span className="submit-btn-icon" aria-hidden="true" style={{ fontSize: '14px' }}>⏳</span>
                     </>
                   ) : (
                     <>
-                      <span>Send project inquiry</span>
-                      <span aria-hidden="true">↗</span>
+                      <span className="submit-btn-label">Send project inquiry</span>
+                      <span className="submit-btn-icon" aria-hidden="true">↗</span>
                     </>
                   )}
                 </button>
