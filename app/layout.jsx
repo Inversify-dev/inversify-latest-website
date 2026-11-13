@@ -97,10 +97,14 @@ export const metadata = {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
       { url: '/favicon.webp', sizes: '192x192', type: 'image/webp' },
     ],
     shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.webp',
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.webp', sizes: '180x180', type: 'image/webp' },
+    ],
   },
 };
 
