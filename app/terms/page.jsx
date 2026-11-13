@@ -268,7 +268,6 @@ export default function TermsPage() {
           <div className="legal-hero-card">
             <div className="legal-hero-meta">
               <span className="badge-status-pill">
-                <span className="beacon-dot"></span>
                 <span>Official Agreement</span>
               </span>
               <span className="text-secondary font-mono" style={{ fontSize: '13px' }}>
@@ -404,7 +403,6 @@ export default function TermsPage() {
                     </h3>
                   </div>
                   <span className="badge-status-pill mt-1">
-                    <span className="beacon-dot"></span>
                     <span>Direct Colombo Engineering</span>
                   </span>
                 </div>

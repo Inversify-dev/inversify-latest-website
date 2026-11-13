@@ -15,26 +15,44 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const metadata = {
   metadataBase: new URL('https://inversify.lk'),
-  title: 'Inversify | Websites, E-Commerce, Custom Software & AI Automation',
-  description: "Sri Lanka's premier engineering studio specializing in high-performance Website Design & Development, E-Commerce Stores, Bespoke Software Systems, and AI Business Automation.",
+  title: {
+    default: 'Inversify | Websites, E-Commerce, Custom Software & AI Automation',
+    template: '%s | Inversify',
+  },
+  description: "Sri Lanka's premier engineering studio in Colombo. Specializing in high-performance Website Design & Development, E-Commerce Stores & Card Payments, Bespoke Software Systems, and 24/7 AI Business Automation.",
   keywords: [
+    'inversify',
+    'inversify sri lanka',
+    'inversify colombo',
+    'building inversify',
     'website design and development sri lanka',
     'web design colombo',
+    'web design agency sri lanka',
     'custom software development sri lanka',
+    'software company colombo',
     'systems engineering colombo',
     'ecommerce website development sri lanka',
-    'payment gateway integration sri lanka',
+    'payhere payment gateway integration',
     'online store development colombo',
     'ai automation agency sri lanka',
     'ai business automation colombo',
-    'whatsapp ai customer assistant',
+    'whatsapp ai customer assistant sri lanka',
     'nextjs web development colombo',
-    'inversify',
   ],
-  authors: [{ name: 'Inversify Engineering Team' }],
+  authors: [{ name: 'Inversify Engineering Team', url: 'https://inversify.lk' }],
+  creator: 'Inversify',
+  publisher: 'Inversify',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: 'https://inversify.lk',
+  },
   openGraph: {
     title: 'Inversify | Websites, E-Commerce, Custom Software & AI Automation',
-    description: 'Bespoke custom websites, online storefronts, bespoke software systems, and autonomous 24/7 AI business automation workflows.',
+    description: "Premier digital engineering studio in Colombo, Sri Lanka. Bespoke high-speed websites, online stores, custom software systems, and 24/7 AI automation workflows.",
     url: 'https://inversify.lk',
     siteName: 'Inversify',
     images: [
@@ -42,11 +60,38 @@ export const metadata = {
         url: '/images/about1-1.webp',
         width: 1200,
         height: 630,
-        alt: 'Inversify Colombo Engineering',
+        alt: 'Inversify Engineering Studio Colombo Sri Lanka',
       },
     ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Inversify | Websites, E-Commerce, Custom Software & AI Automation',
+    description: "Sri Lanka's premier engineering studio in Colombo. Custom websites, e-commerce storefronts, software systems, and AI automation.",
+    images: ['/images/about1-1.webp'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'google-site-verification-inversify',
+  },
+  other: {
+    'geo.region': 'LK-11',
+    'geo.placename': 'Colombo',
+    'geo.position': '6.9344;79.8428',
+    'ICBM': '6.9344, 79.8428',
   },
   icons: {
     icon: [
@@ -66,33 +111,63 @@ export default function RootLayout({ children }) {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Inversify',
+    alternateName: ['Inversify Sri Lanka', 'Inversify Colombo', 'Inversify LK', 'Building Inversify'],
     url: 'https://inversify.lk',
     logo: 'https://inversify.lk/images/inversify-logo-white.webp',
     image: 'https://inversify.lk/images/about1-1.webp',
     description: 'Premier studio for Website Design & Development, E-Commerce Stores, Custom Software Systems, and AI Business Automation in Colombo, Sri Lanka.',
     telephone: '+94704621228',
     email: 'invert@inversify.lk',
+    priceRange: '$$',
+    currenciesAccepted: 'LKR, USD, GBP, AUD, EUR',
+    paymentAccepted: 'Credit Card, Debit Card, Bank Transfer, PayHere',
     sameAs: [
       'https://www.instagram.com/building.inversify/',
       'https://www.tiktok.com/@building.inversify',
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Level 14, World Trade Center, Echelon Square',
       addressLocality: 'Colombo',
-      postalCode: '00100',
-      addressCountry: 'LK',
+      addressCountry: 'Sri Lanka',
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '6.9344',
+      longitude: '79.8428',
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '09:00',
+        closes: '19:00',
+      },
+    ],
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Colombo',
+      },
+      {
+        '@type': 'Country',
+        name: 'Sri Lanka',
+      },
+      {
+        '@type': 'AdministrativeArea',
+        name: 'Western Province',
+      },
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Core Digital & AI Services',
+      name: 'Core Digital & AI Engineering Disciplines',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
             name: 'Website Design & Development',
-            description: 'Ultra-fast custom websites built with modern architecture, instant page loading, and clean mobile responsiveness.',
+            description: 'Ultra-fast custom websites engineered with sub-second page speed, bespoke design systems, search SEO readiness, and frictionless mobile UX.',
+            url: 'https://inversify.lk/services/web-development',
           },
         },
         {
@@ -100,7 +175,17 @@ export default function RootLayout({ children }) {
           itemOffered: {
             '@type': 'Service',
             name: 'E-Commerce & Online Stores',
-            description: 'Modern online stores with secure card payment integrations, automated SMS order alerts, and live inventory sync.',
+            description: 'Modern storefronts with secure credit/debit card payment integrations, automated SMS & WhatsApp buyer alerts, and live inventory sync.',
+            url: 'https://inversify.lk/services/ecommerce-payhere',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Custom Software & Systems',
+            description: 'Bespoke operational dashboards, ERP tools, client/employee portals, and cloud databases engineered to eliminate manual bottlenecks.',
+            url: 'https://inversify.lk/services/custom-software',
           },
         },
         {
@@ -108,7 +193,8 @@ export default function RootLayout({ children }) {
           itemOffered: {
             '@type': 'Service',
             name: 'AI Automation',
-            description: 'Autonomous 24/7 WhatsApp and web customer chat assistants, lead capture, and workflow automation.',
+            description: 'Autonomous 24/7 WhatsApp and web customer assistants, instant lead capture, spreadsheet sync, and zero manual overhead workflows.',
+            url: 'https://inversify.lk/services/ai-automation',
           },
         },
       ],

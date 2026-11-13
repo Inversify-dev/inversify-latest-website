@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'Jersey Cloud',
     slug: 'jerseycloud',
-    category: 'E-Commerce / Retail Store',
+    category: 'E-Commerce & Online Stores',
     year: '2026',
     image: '/images/projects/jerseycloud.webp',
     result: 'High-converting online store with seamless card checkout.',
@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Qaidh Sinnalebbe',
     slug: 'qaidh',
-    category: 'Film Direction / Portfolio',
+    category: 'Website Design & Portfolio',
     year: '2026',
     image: '/images/projects/qaidh.webp',
     result: 'Cinematic portfolio for an international filmmaker & director.',
@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'Colombo Athletic FC',
     slug: 'colombo-athletic-football-club',
-    category: 'Sports Academy / AC Milan Partner',
+    category: 'Website Design & Development',
     year: '2026',
     image: '/images/projects/cafc.webp',
     result: 'AC Milan partner academy and youth enrollment portal.',
@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'Mint B2B Solutions',
     slug: 'mint-b2b-solutions',
-    category: 'Enterprise / B2B Operations',
+    category: 'Website Design & Enterprise Platform',
     year: '2026',
     image: '/images/projects/mintb2b.webp',
     result: 'Secure operations hub built for Australian advisory practices.',
@@ -42,7 +42,7 @@ const projects = [
   {
     title: 'Fusion Gear',
     slug: 'fusion-gear',
-    category: 'Order Management System',
+    category: 'Custom Software & Systems',
     year: '2026',
     image: '/images/projects/fusiongear.webp',
     result: 'Operations dashboard with live customer order tracking.',

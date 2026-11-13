@@ -13,8 +13,6 @@ const revealTargets = [
   '.studio-principles-intro',
   '.studio-faq-intro',
   '.studio-testimonial-heading',
-  '.project-jigsaw-cell',
-  '.project-jigsaw-tile',
   '.service-index-entry',
   '.blog-journal-entry',
   '.studio-work-card',
@@ -113,7 +111,7 @@ export default function ScrollAnimations() {
           reveal(entry.target);
           observer.unobserve(entry.target);
         }),
-      { rootMargin: '0px 0px 120px 0px', threshold: 0.01 }
+      { rootMargin: '0px 0px 240px 0px', threshold: 0.01 }
     );
 
     const start = window.setTimeout(() => {

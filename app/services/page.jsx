@@ -53,7 +53,7 @@ export default function ServicesPage() {
       badge: 'Engineered for Scale',
       title: 'Custom Software & Systems',
       summary: 'Bespoke business software, operational dashboards, order tracking hubs, and cloud workflow systems.',
-      image: '/images/service-systems.jpg',
+      image: '/images/service-systems.webp',
       chips: [
         'Custom Admin Portals',
         'Real-Time API Sync',
@@ -139,7 +139,6 @@ export default function ServicesPage() {
           <div className="services-header-strip mb-5">
             <div>
               <span className="badge-status-pill mb-2 d-inline-flex">
-                <span className="beacon-dot"></span>
                 <span>Four Disciplines</span>
               </span>
               <h2 className="text-white m-0" style={{ fontSize: 'clamp(2rem, 3.4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.02em' }}>
@@ -209,7 +208,6 @@ export default function ServicesPage() {
           <div className="row g-5 align-items-start">
             <div className="col-lg-5">
               <div className="badge-status-pill mb-3">
-                <span className="beacon-dot"></span>
                 <span>Common Questions</span>
               </div>
               <h2 className="text-white mb-3" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800 }}>

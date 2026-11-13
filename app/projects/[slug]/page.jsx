@@ -286,7 +286,6 @@ export default function ProjectDetailsPage({ params }) {
             <div className="case-responsive-showcase">
               <div className="mb-3">
                 <div className="badge-status-pill mb-2">
-                  <span className="beacon-dot"></span>
                   <span>RESPONSIVE ACROSS ALL SCREENS</span>
                 </div>
                 <h3 className="text-white mb-1" style={{ fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 700 }}>
@@ -308,7 +307,6 @@ export default function ProjectDetailsPage({ params }) {
             <div className="col-lg-6">
               <div className="case-narrative-card p-4 p-md-5 rounded-4 h-100">
                 <div className="badge-status-pill mb-3">
-                  <span className="beacon-dot"></span>
                   <span>The Challenge</span>
                 </div>
                 <h3 className="text-white mb-3" style={{ fontSize: '22px', fontWeight: 700 }}>
@@ -323,7 +321,6 @@ export default function ProjectDetailsPage({ params }) {
             <div className="col-lg-6">
               <div className="case-narrative-card p-4 p-md-5 rounded-4 h-100" style={{ borderColor: 'rgba(118, 246, 245, 0.3)' }}>
                 <div className="badge-status-pill mb-3">
-                  <span className="beacon-dot"></span>
                   <span>The Inversify Solution</span>
                 </div>
                 <h3 className="text-white mb-3" style={{ fontSize: '22px', fontWeight: 700 }}>
@@ -342,7 +339,6 @@ export default function ProjectDetailsPage({ params }) {
               <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
                 <div>
                   <div className="badge-status-pill mb-2">
-                    <span className="beacon-dot"></span>
                     <span>UI & FEATURE SPOTLIGHT</span>
                   </div>
                   <h3 className="text-white mb-0" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)', fontWeight: 700 }}>

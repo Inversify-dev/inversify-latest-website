@@ -11,7 +11,6 @@ export default function Error({ error, reset }) {
   return (
     <div className="min-vh-100 d-flex flex-column align-items-center justify-content-center text-center p-4" style={{ background: '#09061A' }}>
       <div className="badge-status-pill mb-4">
-        <span className="beacon-dot"></span>
         <span>System Error Handled</span>
       </div>
       <h2 className="text-white mb-3" style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 800 }}>

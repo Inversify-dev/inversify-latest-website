@@ -160,8 +160,7 @@ export default function BlogPage() {
           {/* Toolbar Strip: Count & Search */}
           <div className="blog-toolbar mb-5">
             <div className="aik-counter-strip">
-              <span role="status" aria-live="polite">{filteredPosts.length} ARTICLES</span>
-              <span className="aik-counter-dot"></span>
+              <span role="status" aria-live="polite">{filteredPosts.length} {filteredPosts.length === 1 ? 'ARTICLE' : 'ARTICLES'}</span>
             </div>
             <label className="blog-search-field">
               <i className="fa-solid fa-magnifying-glass" aria-hidden="true" />
@@ -270,7 +269,6 @@ export default function BlogPage() {
             }}
           >
             <div className="badge-status-pill mb-3">
-              <span className="beacon-dot"></span>
               <span>Inversify Growth Dispatch</span>
             </div>
             <h2 className="text-white mb-3" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', fontWeight: 800 }}>

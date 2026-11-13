@@ -11,7 +11,6 @@ export default function NotFound() {
       <Header />
       <div className="container py-120 text-center my-auto">
         <div className="badge-status-pill d-inline-flex mb-4">
-          <span className="beacon-dot"></span>
           <span>Error 404 • Resource Not Found</span>
         </div>
         <h1 className="text-white mb-3" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(3rem, 8vw, 6rem)', fontWeight: 800, letterSpacing: '-0.03em' }}>

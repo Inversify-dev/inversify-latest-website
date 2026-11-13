@@ -11,19 +11,18 @@ export default function ProjectsPage() {
 
   const filterTabs = [
     { id: 'all', label: 'All Projects' },
-    { id: 'ecommerce', label: 'E-Commerce & Retail' },
-    { id: 'systems', label: 'Systems & Operations' },
-    { id: 'creative', label: 'Film & Creative Direction' },
-    { id: 'sports', label: 'Sports & Academy' },
-    { id: 'b2b', label: 'Enterprise B2B' },
+    { id: 'websites', label: 'Websites & Portfolios' },
+    { id: 'ecommerce', label: 'E-Commerce & Online Stores' },
+    { id: 'systems', label: 'Custom Software & Systems' },
+    { id: 'automation', label: 'AI Automation' },
   ];
 
   const projects = [
     {
       id: 'jerseycloud',
       slug: 'jerseycloud',
-      category: 'ecommerce',
-      discipline: 'E-Commerce & Retail Store',
+      categories: ['ecommerce'],
+      discipline: 'E-Commerce & Online Stores',
       badge: 'Live Platform',
       title: 'Jersey Cloud',
       domain: 'jerseycloud.lk',
@@ -32,8 +31,8 @@ export default function ProjectsPage() {
     {
       id: 'qaidh',
       slug: 'qaidh',
-      category: 'creative',
-      discipline: 'Film Direction & Portfolio',
+      categories: ['websites'],
+      discipline: 'Website Design & Portfolio',
       badge: 'Live Showcase',
       title: 'Qaidh Sinnalebbe',
       domain: 'qaidh.com',
@@ -42,8 +41,8 @@ export default function ProjectsPage() {
     {
       id: 'fusion-gear',
       slug: 'fusion-gear',
-      category: 'systems',
-      discipline: 'Order Management System',
+      categories: ['systems', 'automation'],
+      discipline: 'Custom Software & Systems',
       badge: 'Internal System',
       title: 'Fusion Gear',
       domain: 'Internal System',
@@ -52,8 +51,8 @@ export default function ProjectsPage() {
     {
       id: 'colombo-athletic-football-club',
       slug: 'colombo-athletic-football-club',
-      category: 'sports',
-      discipline: 'Sports Academy Platform',
+      categories: ['websites'],
+      discipline: 'Website Design & Development',
       badge: 'Official Academy Partner',
       title: 'Colombo Athletic FC',
       domain: 'colomboathleticfootballclub.com',
@@ -62,8 +61,8 @@ export default function ProjectsPage() {
     {
       id: 'mint-b2b-solutions',
       slug: 'mint-b2b-solutions',
-      category: 'b2b',
-      discipline: 'Enterprise B2B Operations',
+      categories: ['websites'],
+      discipline: 'Website Design & Enterprise Platform',
       badge: 'Live Platform',
       title: 'Mint B2B Solutions',
       domain: 'mintb2bsolutions.com',
@@ -74,7 +73,7 @@ export default function ProjectsPage() {
   const filteredProjects =
     activeFilter === 'all'
       ? projects
-      : projects.filter((p) => p.category === activeFilter);
+      : projects.filter((p) => p.categories?.includes(activeFilter));
 
   return (
     <main className="projects-page-root">
@@ -110,6 +109,7 @@ export default function ProjectsPage() {
             {filterTabs.map((tab) => (
               <button
                 key={tab.id}
+                type="button"
                 onClick={() => setActiveFilter(tab.id)}
                 aria-pressed={activeFilter === tab.id}
                 className={`aik-filter-pill ${activeFilter === tab.id ? 'active' : ''}`}
@@ -121,15 +121,14 @@ export default function ProjectsPage() {
 
           {/* Counter Strip */}
           <div className="aik-counter-strip" role="status" aria-live="polite">
-            <span>{filteredProjects.length} PROJECTS</span>
-            <span className="aik-counter-dot"></span>
+            <span>{filteredProjects.length} {filteredProjects.length === 1 ? 'PROJECT' : 'PROJECTS'}</span>
           </div>
 
           {/* Clean 3-Column Visual Grid (AIK Global Style) */}
           <div className="project-jigsaw-grid">
             {filteredProjects.map((proj, index) => (
-              <div key={proj.slug} className={`project-jigsaw-cell ${index === 0 ? 'is-featured' : ''}`}>
-                <Link href={`/projects/${proj.slug}`} className="project-jigsaw-tile">
+              <div key={proj.slug} className={`project-jigsaw-cell is-revealed ${index === 0 ? 'is-featured' : ''}`}>
+                <Link href={`/projects/${proj.slug}`} className="project-jigsaw-tile is-revealed">
                   <div className="project-jigsaw-media">
                     <img src={proj.image} alt={proj.title} loading="lazy" decoding="async" />
                     <span className="aik-card-badge">{proj.badge}</span>

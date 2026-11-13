@@ -46,7 +46,7 @@ const services = [
     tags: ['Bespoke Software', 'Internal Tools', 'Operations Portals', 'Cloud Databases'],
     headline: 'Bespoke portals, internal systems, and operations software.',
     desc: 'Tailor-made dashboards, ERP tools, and tracking portals engineered to eliminate manual bottlenecks and scale.',
-    image: '/images/service-systems.jpg',
+    image: '/images/service-systems.webp',
     stat: '100%',
     statLabel: 'Bespoke Architecture',
     points: [

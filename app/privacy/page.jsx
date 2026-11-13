@@ -204,7 +204,6 @@ export default function PrivacyPage() {
           <div className="legal-hero-card">
             <div className="legal-hero-meta">
               <span className="badge-status-pill">
-                <span className="beacon-dot"></span>
                 <span>Data Protection Commitment</span>
               </span>
               <span className="text-secondary font-mono" style={{ fontSize: '13px' }}>
@@ -340,7 +339,6 @@ export default function PrivacyPage() {
                     </h3>
                   </div>
                   <span className="badge-status-pill mt-1">
-                    <span className="beacon-dot"></span>
                     <span>Verified Colombo Studio</span>
                   </span>
                 </div>

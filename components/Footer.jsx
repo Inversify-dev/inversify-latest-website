@@ -13,8 +13,8 @@ export default function Footer() {
               src="/images/inversify-logo-white.webp"
               alt="Inversify"
               className="studio-footer-brand-logo"
-              width={160}
-              height={48}
+              width={190}
+              height={58}
               loading="lazy"
             />
             <small className="studio-footer-brand-tag"></small>
@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="studio-footer-links">
           <span className="studio-footer-heading">EXPLORE</span>
           <Link href="/projects">Work</Link>
-          <Link href="/services">Capabilities</Link>
+          <Link href="/services">Services</Link>
           {/* <Link href="/blog">Journal</Link> */}{/* Temporarily hidden - uncomment to re-enable */}
           <Link href="/contact">Contact</Link>
         </div>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 const principles = [
   { number: '01', title: 'Website Design & Development', copy: 'High-speed custom websites built to build authority and convert mobile visitors.', image: '/images/service4-1.webp', href: '/services/web-development', label: 'Websites' },
   { number: '02', title: 'E-Commerce & Online Stores', copy: 'Intuitive online storefronts with seamless card checkout and WhatsApp alerts.', image: '/images/service8-1.webp', href: '/services/ecommerce-payhere', label: 'Online Stores' },
-  { number: '03', title: 'Custom Software & Systems', copy: 'Bespoke operations portals, dashboards, and management tools built to scale.', image: '/images/service-systems.jpg', href: '/services/custom-software', label: 'Software & Systems' },
+  { number: '03', title: 'Custom Software & Systems', copy: 'Bespoke operations portals, dashboards, and management tools built to scale.', image: '/images/service-systems.webp', href: '/services/custom-software', label: 'Software & Systems' },
   { number: '04', title: 'AI Automation', copy: '24/7 AI assistants and smart workflows that automate repetitive operations.', image: '/images/service7-1.webp', href: '/services/ai-automation', label: 'AI Workflows' },
 ];
 

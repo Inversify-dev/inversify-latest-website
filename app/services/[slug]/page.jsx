@@ -102,7 +102,7 @@ const serviceDatabase = {
     kicker: 'BESPOKE BUSINESS SYSTEMS & PORTALS',
     tagline: 'Custom business software, operational portals, and internal management tools engineered to solve your operational bottlenecks.',
     summary: 'We engineer tailor-made software applications, client and employee portals, order management dashboards, and ERP platforms built to solve your unique operational bottlenecks. Secure, scalable, and tailored precisely to how your business works.',
-    heroImage: '/images/service-systems.jpg',
+    heroImage: '/images/service-systems.webp',
     problemText: 'Off-the-shelf software is expensive, clunky, and forces your business to adapt to rigid templates instead of supporting your actual workflows.',
     solutionText: 'We engineer bespoke software and internal systems that map precisely to your processes, streamline operations, and scale effortlessly with your team.',
     deliverables: [
