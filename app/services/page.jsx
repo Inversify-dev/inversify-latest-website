@@ -18,18 +18,18 @@ export default function ServicesPage() {
       discipline: 'High-Speed Web Platforms',
       badge: 'Most Requested',
       title: 'Website Design & Development',
-      summary: 'Custom-engineered Next.js platforms built for instant loading, world-class aesthetics, and high conversion.',
+      summary: 'Custom-engineered websites built for instant loading, world-class aesthetics, and high conversion.',
       image: '/images/service-details.webp',
       chips: [
         'Bespoke Design System',
-        'Next.js Instant Speed',
+        'Instant Page Speed',
         'Built-in Search SEO',
         'Frictionless Mobile UX',
       ],
     },
     {
       num: '02',
-      slug: 'ecommerce-payhere',
+      slug: 'ecommerce-solutions',
       kicker: '02 / DIGITAL COMMERCE',
       statPill: '1-Click Checkout',
       discipline: 'Digital Commerce & Payments',
@@ -39,7 +39,7 @@ export default function ServicesPage() {
       image: '/images/service4-1.webp',
       chips: [
         'Card & Wallet Gateways',
-        'Instant WhatsApp Alerts',
+        'Instant Order Alerts',
         'Live Inventory Sync',
         '1-Click Mobile Checkout',
       ],
@@ -55,7 +55,7 @@ export default function ServicesPage() {
       summary: 'Bespoke business software, operational dashboards, order tracking hubs, and cloud workflow systems.',
       image: '/images/service-systems.webp',
       chips: [
-        'Custom Admin Portals',
+        'Custom Team Portals',
         'Real-Time API Sync',
         'Bank-Grade Security',
         'Scalable Cloud Architecture',
@@ -69,10 +69,10 @@ export default function ServicesPage() {
       discipline: 'Autonomous AI Workflows',
       badge: 'Hands-Free Ops',
       title: 'AI Automation',
-      summary: 'Autonomous AI assistants for WhatsApp and web that answer inquiries 24/7 and eliminate repetitive busywork.',
+      summary: 'Autonomous AI assistants that answer inquiries 24/7 and eliminate repetitive busywork.',
       image: '/images/service7-1.webp',
       chips: [
-        '24/7 WhatsApp AI',
+        '24/7 AI Customer Help',
         'Lead Qualification',
         'Spreadsheet & CRM Sync',
         'Zero Manual Overhead',
@@ -87,7 +87,7 @@ export default function ServicesPage() {
     },
     {
       q: 'How do online payment integrations work for e-commerce stores?',
-      a: 'We integrate certified payment gateways so customers pay quickly with Visa, Mastercard, and digital wallets, with instant WhatsApp and SMS order confirmation.',
+      a: 'We integrate certified payment gateways so customers pay quickly with Visa, Mastercard, and digital wallets, with instant order confirmation.',
     },
     {
       q: 'What types of custom software and business systems can you build?',
@@ -95,11 +95,11 @@ export default function ServicesPage() {
     },
     {
       q: 'How does AI automation streamline daily operations?',
-      a: 'AI assistants handle WhatsApp inquiries around the clock, qualify incoming leads, and sync data directly to your CRM—saving over 100 hours of manual busywork each month.',
+      a: 'AI assistants handle customer inquiries around the clock, qualify incoming leads, and sync data directly to your CRM-saving over 100 hours of manual busywork each month.',
     },
     {
       q: 'What is the typical project timeline from start to launch?',
-      a: 'Most custom websites and e-commerce stores launch within 2 to 4 weeks. Custom software and AI automation workflows typically go live in 2 to 4 weeks with weekly milestones.',
+      a: 'Timelines are agreed during kickoff based on your project scope and feedback speed. We work in clear transparent milestones so you can review progress every step of the way.',
     },
     {
       q: 'What are your standard project payment terms?',

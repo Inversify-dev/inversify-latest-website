@@ -1,13 +1,19 @@
 const serviceMetadataMap = {
   'web-development': {
     title: 'Website Design & Development Sri Lanka | Inversify Colombo',
-    description: 'High-speed bespoke websites engineered with Next.js, sub-second page speed, built-in search SEO, and frictionless mobile UX in Colombo, Sri Lanka.',
-    keywords: ['website design sri lanka', 'web development colombo', 'custom website design colombo', 'nextjs developer sri lanka'],
+    description: 'High-speed custom websites engineered for fast page loading, built-in search visibility, and smooth mobile experience in Colombo, Sri Lanka.',
+    keywords: ['website design sri lanka', 'web development colombo', 'custom website design colombo', 'web developer sri lanka'],
     image: '/images/service-details.webp',
+  },
+  'ecommerce-solutions': {
+    title: 'E-Commerce & Online Stores | Inversify Colombo Sri Lanka',
+    description: 'Custom e-commerce storefronts integrated with secure card payments, automated order notifications, and island-wide delivery tracking in Sri Lanka.',
+    keywords: ['ecommerce website development sri lanka', 'online store colombo', 'online payment gateway sri lanka'],
+    image: '/images/service4-1.webp',
   },
   'ecommerce-payhere': {
     title: 'E-Commerce & Online Stores | Inversify Colombo Sri Lanka',
-    description: 'Custom e-commerce storefronts integrated with secure card payments, automated WhatsApp/SMS order notifications, and island-wide delivery tracking in Sri Lanka.',
+    description: 'Custom e-commerce storefronts integrated with secure card payments, automated order notifications, and island-wide delivery tracking in Sri Lanka.',
     keywords: ['ecommerce website development sri lanka', 'online store colombo', 'online payment gateway sri lanka'],
     image: '/images/service4-1.webp',
   },
@@ -18,9 +24,9 @@ const serviceMetadataMap = {
     image: '/images/service-systems.webp',
   },
   'ai-automation': {
-    title: 'AI Automation & 24/7 WhatsApp AI Assistants | Inversify Sri Lanka',
-    description: 'Autonomous 24/7 AI chat assistants for WhatsApp and web, automated lead qualification, spreadsheet/CRM synchronization, and zero manual overhead workflows in Sri Lanka.',
-    keywords: ['ai automation sri lanka', 'whatsapp ai assistant colombo', 'ai customer service bot sri lanka', 'business automation sri lanka'],
+    title: 'AI Automation & 24/7 AI Customer Assistants | Inversify Sri Lanka',
+    description: 'Autonomous 24/7 AI customer assistants, automated lead qualification, spreadsheet/CRM synchronization, and zero manual overhead workflows in Sri Lanka.',
+    keywords: ['ai automation sri lanka', 'ai customer assistant colombo', 'ai customer service bot sri lanka', 'business automation sri lanka'],
     image: '/images/service7-1.webp',
   },
 };

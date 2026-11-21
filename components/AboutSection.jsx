@@ -5,10 +5,6 @@ import Link from 'next/link';
 export default function AboutSection() {
   return (
     <section id="about" className="studio-about studio-section">
-      <div className="studio-section-topline">
-        <span>01 / WHO WE ARE</span>
-        <span className="studio-topline-sub">Independent thinking, built to last</span>
-      </div>
       <div className="studio-about-heading">
         <h2>Not just a digital<br /><em>presence.</em> <span className="formal-cap-a">A</span> point of view.</h2>
         <div className="studio-about-intro">

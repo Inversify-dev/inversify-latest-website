@@ -29,7 +29,6 @@ const revealTargets = [
   '.studio-hero-bottom',
   '.hero-image-caption',
   '.studio-hero-footer',
-  '.service-detail-root .container > *',
   '.project-detail-root .container > *',
   '.blog-detail-root .container > *',
   '.blog-article-root .container > *',

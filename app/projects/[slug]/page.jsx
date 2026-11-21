@@ -18,21 +18,21 @@ const projectDatabase = {
     location: 'Colombo, Sri Lanka',
     image: '/images/projects/jerseycloud.webp',
     challenge:
-      'Jersey Cloud needed a high-performance, mobile-first e-commerce platform for football fans and athletes across Sri Lanka. Their previous setup lacked automated local card payments, dynamic size customization for player names/numbers, and instant WhatsApp order confirmations.',
+      'Jersey Cloud needed a high-performance, mobile-first e-commerce platform for football fans and athletes across Sri Lanka. Their previous setup lacked automated local card payments, dynamic size customization for player names/numbers, and instant order confirmations.',
     solution:
-      'Inversify architected an ultra-fast custom React storefront integrated with the official PayHere payment gateway for seamless Visa and MasterCard checkouts, instant order status SMS and WhatsApp alerts, island-wide delivery tracking, and a high-converting mobile product catalog.',
+      'Inversify architected an ultra-fast custom React storefront integrated with a secure online payment gateway for seamless Visa and MasterCard checkouts, instant order status notifications, island-wide delivery tracking, and a high-converting mobile product catalog.',
     results: [
       { metric: '+310%', label: 'Mobile Checkout Conversion' },
-      { metric: 'Instant', label: 'PayHere Card & IPG Processing' },
+      { metric: 'Instant', label: 'Online Card & IPG Processing' },
       { metric: '0.38s', label: 'Sub-Second Page Speed' },
       { metric: '100%', label: 'Island-Wide Automated Delivery Dispatch' },
     ],
-    techStack: ['Next.js / React', 'PayHere Card IPG', 'Mobile-First UX', 'Automated SMS & WhatsApp Alerts'],
+    techStack: ['React Architecture', 'Secure Card IPG', 'Mobile-First UX', 'Automated Order Alerts'],
     responsiveMockup: '/images/projects/jerseycloud-responsive.webp',
     gallery: ['/images/projects/jerseycloud-catalog.webp', '/images/projects/jerseycloud-product.webp'],
     milestones: [
       'Custom e-commerce store with high-resolution jersey previews & team filtering',
-      'Direct PayHere payment gateway with Visa, MasterCard, and Genie integration',
+      'Direct online payment gateway with Visa, MasterCard, and mobile wallet integration',
       'Automated order dispatch and island-wide delivery notification system',
       'Real-time stock management and mobile-optimized customer checkout',
     ],
@@ -80,7 +80,7 @@ const projectDatabase = {
     industry: 'Sportswear Retail, Order Fulfillment & Live Parcel Tracking',
     timeline: 'Completed in 3 Weeks',
     location: 'Colombo, Sri Lanka',
-    image: '/images/projects/fusiongear.webp',
+    image: '/images/projects/all-orders-dashboard-mockup.webp',
     challenge:
       'Fusion Gear manages high-volume custom jersey orders across overseas manufacturing and domestic dispatch. Previously, updating customers on supplier processing, overseas transit, customs clearance, and courier delivery required manual inquiries, causing operational overhead and communication delays.',
     solution:
@@ -92,8 +92,11 @@ const projectDatabase = {
       { metric: '0.25s', label: 'Sub-Second Portal Lookup Speed' },
     ],
     techStack: ['Tailored System Architecture', 'Real-Time Order Tracking Engine', 'Admin Control Dashboard', 'Automated Waybill Management'],
-    responsiveMockup: '/images/projects/fusiongear-responsive.webp',
-    gallery: ['/images/projects/fusiongear.webp', '/images/projects/fusiongear-detail.webp'],
+    responsiveMockup: '/images/projects/fusion-gear-order-tracking-dashboard.webp',
+    gallery: [
+      '/images/projects/all-orders-dashboard-mockup.webp',
+      '/images/projects/fusion-gear-order-details-showcase.webp'
+    ],
     milestones: [
       'Centralised administrative dashboard for managing orders, batches, and waybills in one place',
       'Customer-facing 9-stage tracking timeline (from order receipt to customs and final dispatch)',
@@ -360,7 +363,7 @@ export default function ProjectDetailsPage({ params }) {
               ) : (
                 <div className="row">
                   {project.gallery.map((img, i) => (
-                    <div key={i} className="col-12 col-md-6">
+                    <div key={i} className={`col-12 ${project.gallery.length === 3 ? 'col-md-4' : 'col-md-6'}`}>
                       <div className="gallery-img-wrap">
                         <img
                           src={img}

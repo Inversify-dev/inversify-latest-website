@@ -46,7 +46,7 @@ export default function ProjectsPage() {
       badge: 'Internal System',
       title: 'Fusion Gear',
       domain: 'Internal System',
-      image: '/images/projects/fusiongear.webp',
+      image: '/images/projects/all-orders-dashboard-mockup.webp',
     },
     {
       id: 'colombo-athletic-football-club',
@@ -81,7 +81,7 @@ export default function ProjectsPage() {
       <PageTitle
         tag="SELECTED WORK"
         title="Work worth a closer look."
-        description="A selection of digital products, commerce experiences, and brand work—made to solve real business problems."
+        description="A selection of digital products, commerce experiences, and brand work-made to solve real business problems."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Portfolio' },

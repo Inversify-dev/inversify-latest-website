@@ -104,7 +104,7 @@ export default function Header() {
               </ul>
             </nav>
             <div className="mobile-drawer-footer">
-              <div className="mobile-contact-info"><span className="loc-label">Colombo · Sri Lanka</span><p>Independent thinking. Measurable momentum.</p></div>
+              <div className="mobile-contact-info"><span className="loc-label">Colombo · Sri Lanka</span></div>
               <div className="mobile-drawer-socials d-flex align-items-center gap-3 mb-3">
                 <a href="https://www.instagram.com/building.inversify/" target="_blank" rel="noreferrer" className="mobile-drawer-social-link">
                   <i className="fa-brands fa-instagram"></i> Instagram

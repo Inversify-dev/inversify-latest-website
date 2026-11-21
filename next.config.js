@@ -5,9 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    cpus: 1,
-  },
   // Temporarily redirect Journal while hidden. Remove or comment out to re-open.
   async redirects() {
     return [

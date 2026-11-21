@@ -10,6 +10,7 @@ const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxzdC0o7AHRql
 
 const serviceAliases = {
   ecommerce: 'E-Commerce & Online Stores',
+  'ecommerce-solutions': 'E-Commerce & Online Stores',
   'ecommerce-payhere': 'E-Commerce & Online Stores',
   web: 'Website Design & Development',
   website: 'Website Design & Development',
@@ -153,7 +154,7 @@ export default function ContactPage() {
       <PageTitle
         tag="START A PROJECT / DIRECT STUDIO ACCESS"
         title="Let’s make your next move count."
-        description="Tell us what you want to build or change. A short message is enough—we’ll talk through practical next steps with direct engineering access."
+        description="Tell us what you want to build or change. A short message is enough-we’ll talk through practical next steps with direct engineering access."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Contact' },

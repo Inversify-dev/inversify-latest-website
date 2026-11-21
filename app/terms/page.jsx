@@ -24,7 +24,7 @@ export default function TermsPage() {
         },
         {
           num: '1.3',
-          text: 'If the client breaches any part of this agreement—including client-caused project stalls, overdue milestone payments, or unnotified lack of communication exceeding one (1) week during or following project completion—Inversify reserves the right to terminate the contract without refund of prior deposits.',
+          text: 'If the client breaches any part of this agreement-including client-caused project stalls, overdue milestone payments, or unnotified lack of communication exceeding one (1) week during or following project completion-Inversify reserves the right to terminate the contract without refund of prior deposits.',
         },
       ],
     },
@@ -101,7 +101,7 @@ export default function TermsPage() {
         },
         {
           num: '4.6',
-          text: 'Recurring infrastructure services—including managed cloud hosting, automated backups, SSL certificates, and annual domain renewals—are billed separately on a 12-month renewal cycle.',
+          text: 'Recurring infrastructure services-including managed cloud hosting, automated backups, SSL certificates, and annual domain renewals-are billed separately on a 12-month renewal cycle.',
         },
         {
           num: '4.7',
@@ -174,7 +174,7 @@ export default function TermsPage() {
       clauses: [
         {
           num: '7.1',
-          text: 'Editable master assets—including proprietary application source code repositories, master Figma UI design systems, and Adobe Illustrator/Photoshop vector files—are NOT included in standard commercial web build packages unless explicitly agreed upon in the contract.',
+          text: 'Editable master assets-including proprietary application source code repositories, master Figma UI design systems, and Adobe Illustrator/Photoshop vector files-are NOT included in standard commercial web build packages unless explicitly agreed upon in the contract.',
         },
         {
           num: '7.2',
@@ -263,7 +263,7 @@ export default function TermsPage() {
 
       <section className="legal-editorial-section py-100">
         <div className="legal-editorial-container">
-          
+
           {/* Executive Overview Hero Card */}
           <div className="legal-hero-card">
             <div className="legal-hero-meta">
@@ -277,11 +277,11 @@ export default function TermsPage() {
                 · ~6 min read
               </span>
             </div>
-            
+
             <h2 className="legal-hero-title">
               Engineering Partnerships Built on Absolute Transparency.
             </h2>
-            
+
             <p className="legal-hero-desc">
               These Terms &amp; Conditions govern every service, custom build, and consulting engagement provided by Inversify. By confirming a project, approving a statement of work, or providing an initial milestone deposit, the client accepts these terms. We believe mutual clarity is the foundation of high-performance digital products.
             </p>
@@ -318,7 +318,7 @@ export default function TermsPage() {
 
           {/* Two Column Layout: Sticky Index (Desktop) + Listed Content */}
           <div className="legal-layout-grid">
-            
+
             {/* Sticky Table of Contents Sidebar */}
             <aside className="legal-toc-aside" aria-label="Table of contents">
               <div className="legal-toc-panel">

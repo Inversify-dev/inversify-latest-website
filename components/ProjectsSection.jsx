@@ -44,7 +44,7 @@ const projects = [
     slug: 'fusion-gear',
     category: 'Custom Software & Systems',
     year: '2026',
-    image: '/images/projects/fusiongear.webp',
+    image: '/images/projects/all-orders-dashboard-mockup.webp',
     result: 'Operations dashboard with live customer order tracking.',
     domain: 'Internal System',
   },
@@ -53,7 +53,6 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section id="projects" className="studio-work studio-section">
-      <div className="studio-section-topline"><span>03 / SELECTED WORK</span><span>Good ideas, out in the world</span></div>
       <div className="studio-section-heading studio-work-heading"><div><span className="studio-kicker">A FEW THINGS WE’VE MADE</span><h2>Work with<br /><em>something</em> to say.</h2></div><div className="studio-work-aside"><p>We partner with ambitious people to make useful, beautiful digital things-and make them matter.</p><Link href="/projects" className="studio-arrow-link">Explore all projects <span aria-hidden="true">↗</span></Link></div></div>
       <div className="studio-work-grid">
         {projects.map((project, index) => (

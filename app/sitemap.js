@@ -22,7 +22,7 @@ export default function sitemap() {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/services/ecommerce-payhere`,
+      url: `${baseUrl}/services/ecommerce-solutions`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,

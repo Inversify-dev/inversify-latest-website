@@ -142,7 +142,7 @@ export default function PrivacyPage() {
       clauses: [
         {
           num: '7.1',
-          text: 'Payment processing for e-commerce clients connects directly to PCI-DSS Level 1 certified gateways (e.g. Visa/MasterCard acquiring banks, PayHere, Stripe). Inversify never stores, logs, or views full credit card numbers or banking credentials.',
+          text: 'Payment processing for e-commerce clients connects directly to PCI-DSS Level 1 certified gateways (e.g. Visa/MasterCard acquiring banks, online payment gateways, Stripe). Inversify never stores, logs, or views full credit card numbers or banking credentials.',
         },
         {
           num: '7.2',

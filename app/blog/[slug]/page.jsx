@@ -86,27 +86,27 @@ const articlesDatabase = {
     readTime: '5 min read',
     image: '/images/blog1-3.webp',
     intro:
-      'Selling products and services online in Sri Lanka has never been easier. Learn how setting up trusted payment gateways like PayHere allows your business to accept Visa, Mastercard, Genie, and direct bank transfers 24/7.',
+      'Selling products and services online in Sri Lanka has never been easier. Learn how setting up trusted online payment gateways allows your business to accept Visa, Mastercard, and direct bank transfers 24/7.',
     pullQuote:
       'Giving your customers the convenience to pay online with their credit card or debit card immediately increases your order volume and eliminates manual cash collection delays.',
     sections: [
       {
-        heading: '1. Connecting PayHere and Local Payment Gateways',
-        body: 'PayHere allows Sri Lankan businesses to accept card payments from local banks (Commercial Bank, Sampath Bank, HNB, BOC, Nations Trust) directly into your bank account with automated daily settlements.',
+        heading: '1. Connecting Local and Card Payment Gateways',
+        body: 'Online payment gateways allow Sri Lankan businesses to accept card payments from local banks (Commercial Bank, Sampath Bank, HNB, BOC, Nations Trust) directly into your bank account with automated daily settlements.',
       },
       {
         heading: '2. Accepting International Currencies with Stripe',
         body: 'If you want to sell products to customers in the US, UK, Australia, or Europe, integrating Stripe multi-currency checkout allows customers to pay in USD, GBP, and EUR seamlessly.',
       },
       {
-        heading: '3. Instant Customer SMS and Email Receipts',
-        body: 'The moment a customer completes a payment, automated SMS and email notifications reassure them and give them their order tracking receipt immediately.',
+        heading: '3. Instant Customer Order Confirmations and Email Receipts',
+        body: 'The moment a customer completes a payment, automated email notifications reassure them and provide their order tracking confirmation immediately.',
       },
     ],
     takeaways: [
-      'PayHere makes accepting local card payments in Sri Lanka fast and secure.',
+      'Online payment gateways make accepting local card payments in Sri Lanka fast and secure.',
       'Multi-currency support allows you to sell to international clients.',
-      'Instant SMS receipts give buyers peace of mind and build loyalty.',
+      'Instant order confirmations give buyers peace of mind and build loyalty.',
     ],
     nextSlug: 'modern-react-architecture',
     nextTitle: '5 Costly Website Mistakes That Drive Customers to Your Competitors',
@@ -231,7 +231,7 @@ export default function BlogArticlePage({ params }) {
       role: 'Marketing Director',
       date: 'September 2026',
       avatar: '/images/testi4-2.webp',
-      text: 'Great practical advice on online card payments in Sri Lanka. Inversify made our PayHere store integration completely seamless.',
+      text: 'Great practical advice on online card payments in Sri Lanka. Inversify made our payment gateway store integration completely seamless.',
     },
   ]);
 

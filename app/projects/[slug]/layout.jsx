@@ -15,7 +15,7 @@ const projectMetadataMap = {
     title: 'Fusion Gear Case Study | Custom Order Management System | Inversify',
     description: 'Bespoke internal operations portal, real-time inventory sync, and order management dashboard engineered for Fusion Gear by Inversify in Colombo, Sri Lanka.',
     keywords: ['fusion gear admin portal', 'order management system sri lanka', 'custom software case study colombo', 'inversify fusion gear'],
-    image: '/images/projects/fusiongear.webp',
+    image: '/images/projects/all-orders-dashboard-mockup.webp',
   },
   'colombo-athletic-football-club': {
     title: 'Colombo Athletic FC Case Study | AC Milan Partner Academy Platform | Inversify',

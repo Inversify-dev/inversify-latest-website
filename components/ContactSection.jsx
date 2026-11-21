@@ -90,11 +90,6 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="studio-contact studio-section" aria-labelledby="home-contact-title">
-      <div className="studio-section-topline">
-        <span>07 / LET’S TALK</span>{/* 08 when Journal is enabled */}
-        <span>Real people. One useful next step.</span>
-      </div>
-
       <div className="studio-contact-layout">
         <div className="studio-contact-copy">
           <span className="studio-kicker">A GOOD PLACE TO START</span>

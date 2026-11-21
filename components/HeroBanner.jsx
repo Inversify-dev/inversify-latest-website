@@ -26,7 +26,6 @@ export default function HeroBanner() {
           </div>
         </div>
       </div>
-      <div className="hero-image-caption"><span>01 / 04</span><span>Independent thinking. Measurable momentum.</span><span>Scroll to explore ↓</span></div>
       <div className="studio-hero-footer"><span>Strategy · Software · AI</span><span className="hero-scroll-line" aria-hidden="true" /><span>Colombo · Sri Lanka</span></div>
     </section>
   );
